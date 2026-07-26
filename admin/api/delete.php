@@ -5,7 +5,7 @@ require_once dirname(__DIR__) . '/includes/functions.php';
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['type']) && isset($_POST['id'])) {
     $type = $_POST['type'];
     $id = (int)$_POST['id'];
-    $redirect = $_SERVER['HTTP_REFERER'] ?? '../index.php';
+    $redirect = $_SERVER['HTTP_REFERER'] ?? '/admin/index.php';
     // Remove query params from redirect
     $redirect = explode('?', $redirect)[0];
 

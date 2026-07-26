@@ -2,7 +2,8 @@
 /**
  * Admin Sidebar Navigation
  */
-$currentAdminPage = basename($_SERVER['PHP_SELF']);
+$reqPath = parse_url($_SERVER['REQUEST_URI'] ?? '', PHP_URL_PATH);
+$currentAdminPage = basename($reqPath) ?: 'index.php';
 ?>
 <!-- Mobile Menu Toggle -->
 <button onclick="toggleSidebar()" class="fixed top-4 left-4 z-50 lg:hidden bg-admin-surface p-2 rounded-lg border border-admin-border shadow-lg">

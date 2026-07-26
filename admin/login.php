@@ -11,13 +11,13 @@ require_once __DIR__ . '/includes/functions.php';
 // Handle logout
 if (isset($_GET['logout'])) {
     session_destroy();
-    header('Location: login.php');
+    header('Location: /admin/login.php');
     exit;
 }
 
 // If already logged in, redirect to dashboard
 if (isset($_SESSION['admin_logged_in']) && $_SESSION['admin_logged_in'] === true) {
-    header('Location: index.php');
+    header('Location: /admin/index.php');
     exit;
 }
 
