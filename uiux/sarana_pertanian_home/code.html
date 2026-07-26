@@ -1,0 +1,401 @@
+<!DOCTYPE html><html class="light" lang="en" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Sarana Pertanian - Yield Certainty through Precision Stewardship</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Manrope:wght@600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "surface-container": "#eeeeec",
+                      "surface": "#f9f9f7",
+                      "on-secondary-container": "#795204",
+                      "on-secondary": "#ffffff",
+                      "on-background": "#1a1c1b",
+                      "secondary-container": "#ffc875",
+                      "secondary": "#7e570a",
+                      "primary-container": "#214d36",
+                      "inverse-on-surface": "#f1f1ef",
+                      "tertiary-fixed-dim": "#c3c8c3",
+                      "error": "#ba1a1a",
+                      "on-tertiary": "#ffffff",
+                      "tertiary": "#2a302d",
+                      "on-error-container": "#93000a",
+                      "on-tertiary-fixed": "#171d1a",
+                      "on-secondary-fixed": "#281800",
+                      "tertiary-fixed": "#dfe4df",
+                      "surface-container-high": "#e8e8e6",
+                      "outline": "#717972",
+                      "on-surface-variant": "#414943",
+                      "surface-dim": "#dadad8",
+                      "on-surface": "#1a1c1b",
+                      "background": "#f9f9f7",
+                      "inverse-surface": "#2f3130",
+                      "surface-container-low": "#f4f4f2",
+                      "secondary-fixed-dim": "#f3bd6b",
+                      "primary-fixed-dim": "#a2d1b3",
+                      "on-tertiary-container": "#aeb4af",
+                      "primary": "#063621",
+                      "on-tertiary-fixed-variant": "#424845",
+                      "surface-variant": "#e2e3e1",
+                      "surface-container-highest": "#e2e3e1",
+                      "on-secondary-fixed-variant": "#614000",
+                      "surface-tint": "#3b674e",
+                      "surface-bright": "#f9f9f7",
+                      "on-primary-fixed": "#002112",
+                      "tertiary-container": "#414643",
+                      "error-container": "#ffdad6",
+                      "surface-container-lowest": "#ffffff",
+                      "secondary-fixed": "#ffddaf",
+                      "inverse-primary": "#a2d1b3",
+                      "on-primary": "#ffffff",
+                      "on-error": "#ffffff",
+                      "primary-fixed": "#bdeece",
+                      "outline-variant": "#c1c9c1",
+                      "on-primary-fixed-variant": "#234f38",
+                      "on-primary-container": "#8ebd9f"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "stack-md": "16px",
+                      "gutter": "24px",
+                      "stack-sm": "8px",
+                      "stack-lg": "24px",
+                      "margin-desktop": "40px",
+                      "section-padding": "120px",
+                      "margin-mobile": "16px",
+                      "max-container": "1280px"
+              },
+              "fontFamily": {
+                      "label-sm": [
+                              "Inter"
+                      ],
+                      "display-lg-mobile": [
+                              "Manrope"
+                      ],
+                      "body-lg": [
+                              "Inter"
+                      ],
+                      "label-md": [
+                              "Inter"
+                      ],
+                      "headline-lg": [
+                              "Manrope"
+                      ],
+                      "headline-md": [
+                              "Manrope"
+                      ],
+                      "display-lg": [
+                              "Manrope"
+                      ],
+                      "body-md": [
+                              "Inter"
+                      ]
+              },
+              "fontSize": {
+                      "label-sm": [
+                              "12px",
+                              {
+                                      "lineHeight": "16px",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "display-lg-mobile": [
+                              "40px",
+                              {
+                                      "lineHeight": "48px",
+                                      "letterSpacing": "-0.01em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "28px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "label-md": [
+                              "14px",
+                              {
+                                      "lineHeight": "20px",
+                                      "letterSpacing": "0.05em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "headline-lg": [
+                              "32px",
+                              {
+                                      "lineHeight": "40px",
+                                      "letterSpacing": "-0.01em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "headline-md": [
+                              "24px",
+                              {
+                                      "lineHeight": "32px",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "display-lg": [
+                              "56px",
+                              {
+                                      "lineHeight": "64px",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "24px",
+                                      "fontWeight": "400"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+      </script>
+</head>
+<body class="bg-background text-on-surface font-body-md antialiased selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="bg-surface border-b border-outline-variant shadow-sm w-full top-0 sticky z-50">
+<div class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop max-w-max-container mx-auto h-20">
+<div class="font-manrope text-headline-md font-bold text-primary flex items-center gap-2">
+<span class="">AgriDistribute Premium</span>
+</div>
+<!-- Desktop Nav -->
+<ul class="hidden md:flex gap-gutter items-center"><li class=""><a class="font-manrope text-label-md font-label-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Home</a></li><li class=""><a class="font-manrope text-label-md font-label-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Product</a></li><li class=""><a class="font-manrope text-label-md font-label-md text-primary border-b-2 border-primary pb-1" href="#about">About Us</a></li><li class=""><a class="font-manrope text-label-md font-label-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Kontak</a></li></ul>
+<div class="flex items-center gap-stack-md">
+<button class="hidden md:flex bg-primary-container text-on-primary font-manrope font-label-md text-label-md px-6 py-2.5 rounded-lg hover:opacity-90 transition-opacity">Inquiry Cart</button>
+<button class="text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">shopping_cart</span>
+</button>
+<button class="text-on-surface-variant hover:text-primary transition-colors hidden md:block">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">account_circle</span>
+</button>
+<button class="md:hidden text-on-surface-variant">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</nav>
+<!-- Main Content -->
+<main>
+<!-- 1. Hero Section -->
+<section class="relative w-full h-[80vh] min-h-[600px] flex items-center bg-surface-container-high overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center w-full h-full opacity-40" data-alt="A sweeping aerial view of a meticulously maintained, vibrant green agricultural field bathed in soft morning light, showcasing modern precision farming techniques with perfect geometric rows. High-contrast, premium editorial style." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA9GyYBfiQmM3y2LNPFqubxR0Ao-AHGNwdxN1L8qPlmoKKI9oU3mcIMtRtMa4gkqoy6CvHygyrPcQICfomMo-l_4A58Pg_nEIxmaLbPJCjKfUSfLaEiFRPUbT63SApv2RMSKBCWAqEufsPp4t4aKT6WkqVKFGur7VmoCfwPMjVLGMDX-mcnhjIm2JP5JvELZYHvHuevFJtbCyW4QVNgV4ou98flVj61EERuxS4OXw1_MUkGGftUG4BoRRNmyJuZHn7G5o3coKQmpa0')"></div>
+<div class="relative z-10 w-full px-margin-mobile md:px-margin-desktop max-w-max-container mx-auto">
+<div class="max-w-2xl bg-surface/80 backdrop-blur-md p-8 md:p-12 rounded-xl shadow-lg border border-outline-variant/30">
+<h1 class="font-manrope text-display-lg-mobile md:text-display-lg font-bold text-primary mb-stack-md leading-tight">
+                        Yield Certainty through Precision Stewardship
+                    </h1>
+<p class="font-inter text-body-lg text-on-surface-variant mb-stack-lg">
+                        The official distributor for Indonesia's most trusted agricultural brands. Elevating harvest potential with science-backed solutions.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-stack-md">
+<button class="bg-primary-container text-on-primary font-manrope font-label-md text-label-md px-8 py-3.5 rounded-lg hover:opacity-90 transition-opacity w-full sm:w-auto text-center">
+                            Explore Catalog
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- 2. Trusted Partners -->
+<section class="py-12 border-b border-surface-variant bg-surface-container-lowest">
+<div class="px-margin-mobile md:px-margin-desktop max-w-max-container mx-auto">
+<p class="text-center font-inter text-label-sm text-on-surface-variant uppercase tracking-wider mb-8">Trusted by Industry Leaders</p>
+<div class="flex flex-wrap justify-center items-center gap-12 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
+<!-- Placeholder logos -->
+<span class="material-symbols-outlined text-4xl">agriculture</span>
+<span class="material-symbols-outlined text-4xl">eco</span>
+<span class="material-symbols-outlined text-4xl">science</span>
+<span class="material-symbols-outlined text-4xl">compost</span>
+<span class="material-symbols-outlined text-4xl">local_florist</span>
+</div>
+</div>
+</section>
+<!-- 4. Featured Products -->
+<section class="py-section-padding px-margin-mobile md:px-margin-desktop max-w-max-container mx-auto bg-surface-container-lowest">
+<div class="flex justify-between items-end mb-12">
+<div>
+<h2 class="font-manrope text-headline-lg font-bold text-primary mb-2">Premium Solutions</h2>
+<p class="font-inter text-body-md text-on-surface-variant">Engineered for maximum efficacy and yield protection.</p>
+</div>
+<a class="hidden md:flex items-center gap-2 font-inter text-label-md text-primary hover:text-surface-tint transition-colors" href="#">
+                    View Full Catalog <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Product Card 1 -->
+<div class="bg-surface rounded-xl border border-outline-variant/50 overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.05)] group hover:shadow-[0_12px_40px_rgba(23,54,36,0.08)] transition-all duration-300">
+<div class="aspect-square bg-surface-container-low relative overflow-hidden flex items-center justify-center p-6">
+<img alt="Kalingga 526SL" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida/AP1WRLu2Eny6yVgwMl_M65_aCFpyzkE5WUgdUPE5pGdnzzEInfiVAkN9DFuOWXcgIpt0GM54bWkKVJi7F3RLdHH6q28dtxFUah_C6A0bpgSGDxDDEzN_s3p0DXtJCent38GArVaP98BDmpwIACn-FEYN4XgLOtrZxaaQseXT8RTrga0cAT5AfsDJezZGtw7sya0Q6pK2rZFviX0lGAwWSyCuO8zlaDdLocCZh7XXU3-DtKSNwoOGE9QC3oSQ4lw">
+<div class="absolute top-4 left-4 bg-[#EFF4EF] text-primary px-3 py-1 rounded-full font-inter text-label-sm">Herbicide</div>
+</div>
+<div class="p-6">
+<h3 class="font-manrope text-headline-md font-bold text-on-surface mb-1">Kalingga 526SL</h3>
+<p class="font-inter text-body-md text-on-surface-variant mb-6">Systemic broad-spectrum control.</p>
+<button class="w-full border-1.5 border-primary text-primary font-manrope font-label-md text-label-md px-4 py-2.5 rounded-lg hover:bg-primary-container hover:text-on-primary transition-colors flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-sm">add_shopping_cart</span> Add to Inquiry
+                        </button>
+</div>
+</div>
+<!-- Product Card 2 -->
+<div class="bg-surface rounded-xl border border-outline-variant/50 overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.05)] group hover:shadow-[0_12px_40px_rgba(23,54,36,0.08)] transition-all duration-300">
+<div class="aspect-square bg-surface-container-low relative overflow-hidden flex items-center justify-center p-6">
+<img alt="Barikade 180EC" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida/AP1WRLvfYa7Ezgt_jV4yZZFYLEcItcaoRQehkWuaJqpJqB5IAbtQiuO965o2tpvWUPMfLRQhy-VWncZDeoucQg72zJpZZuniWwmvW131RVsD6JKoMrXJLLv_WLH4vYveztx0wA7o9r0T_ezgZB8IyTCYlrqZI--UZpcg2A1cCMsB_JK0wNWA9B3r-C3PTLiBmKy9q4eaADWkkCtJPJJ4Tp5xFRZpleaWxmqqwYVm2No3Gutl2I0fgSsaxk5kzuE">
+<div class="absolute top-4 left-4 bg-[#EFF4EF] text-primary px-3 py-1 rounded-full font-inter text-label-sm">Insecticide</div>
+</div>
+<div class="p-6">
+<h3 class="font-manrope text-headline-md font-bold text-on-surface mb-1">Barikade 180EC</h3>
+<p class="font-inter text-body-md text-on-surface-variant mb-6">Advanced pest resistance management.</p>
+<button class="w-full border-1.5 border-primary text-primary font-manrope font-label-md text-label-md px-4 py-2.5 rounded-lg hover:bg-primary-container hover:text-on-primary transition-colors flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-sm">add_shopping_cart</span> Add to Inquiry
+                        </button>
+</div>
+</div>
+<!-- Product Card 3 -->
+<div class="bg-surface rounded-xl border border-outline-variant/50 overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.05)] group hover:shadow-[0_12px_40px_rgba(23,54,36,0.08)] transition-all duration-300">
+<div class="aspect-square bg-surface-container-low relative overflow-hidden flex items-center justify-center p-6">
+<img alt="Imsmell 400EC" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida/AP1WRLt8MfnfOKT_woGMMIIdorybgxPYf5cjzboL6eI8Y-z0bRv7JHrwxttb1QKrw9F4jsg2NVU6S_Eu3lDDndcke9UiSsuT5O6-8Hn2nyqYfHziTvY3lbFK0uliG68U8tIUU12m1S57DKks_F2cc-8c7v3xj9op6njCJlCThJjUT8t4DRvdwHKs5Oeh0yItlHfYTUSYR46OMdTfgO9L6CAoYWiwl03r2adXCIzVz7ksolcDxQywinFXAXmFlzQ">
+<div class="absolute top-4 left-4 bg-[#EFF4EF] text-primary px-3 py-1 rounded-full font-inter text-label-sm">Fungicide</div>
+</div>
+<div class="p-6">
+<h3 class="font-manrope text-headline-md font-bold text-on-surface mb-1">Imsmell 400EC</h3>
+<p class="font-inter text-body-md text-on-surface-variant mb-6">Targeted fungal eradication.</p>
+<button class="w-full border-1.5 border-primary text-primary font-manrope font-label-md text-label-md px-4 py-2.5 rounded-lg hover:bg-primary-container hover:text-on-primary transition-colors flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-sm">add_shopping_cart</span> Add to Inquiry
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. About Company -->
+<section class="py-section-padding bg-[#F8F6F2]" id="about">
+<div class="px-margin-mobile md:px-margin-desktop max-w-max-container mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<div class="relative rounded-2xl overflow-hidden aspect-[4/5] shadow-[0_12px_40px_rgba(23,54,36,0.08)]">
+<img alt="Agricultural Field" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AP1WRLuU3NDZ9ev6pzQkhXdusMfvArFafjr-k4iCdvTs4UuyejtjmBqZRKNXLmZnNeKz88SxfxWa0PrGDvYYFZkVoIMnUfIgs0aUIvaBUIuNm-7nA6JzlCt24JamCa37L0GrN2_N0UnOJXZihnl8Rp1_KQ7noeMKkk9GKUbTF7TBuc3OTHVrVSaSN1y00-uRMiafglKFR2MsPgoaPJ8-arYLqRt7reB--EaJtM-vJf6ZjvrHxd6tGapu5osmU0E">
+<div class="absolute inset-0 bg-primary/10 mix-blend-multiply"></div>
+</div>
+<div>
+<div class="flex items-center gap-3 mb-6">
+<div class="h-px w-8 bg-primary"></div>
+<span class="font-inter text-label-sm uppercase tracking-widest text-primary">Corporate Heritage</span>
+</div>
+<h2 class="font-manrope text-display-lg-mobile md:text-display-lg font-bold text-on-surface mb-6 leading-tight">
+                            Deep Roots, <br><span class="text-primary">Future Focused</span>
+</h2>
+<p class="font-inter text-body-lg text-on-surface-variant mb-6 leading-relaxed">
+                            Serving as the vital bridge between nature's potential and scientific rigor. We supply industrial-scale operations with the precise chemical and biological tools required to guarantee yield certainty in a volatile climate.
+                        </p>
+<p class="font-inter text-body-lg text-on-surface-variant mb-10 leading-relaxed">
+                            Our stewardship ensures that every input is optimized for maximum output, minimizing ecological impact while maximizing economic return.
+                        </p>
+<button class="border-1.5 border-primary text-primary font-manrope font-label-md text-label-md px-8 py-3 rounded-lg hover:bg-primary-container hover:text-on-primary transition-colors">
+                            Discover Our Methodology
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- 8. Latest Articles -->
+<section class="py-section-padding bg-surface-container-lowest" id="about">
+<div class="px-margin-mobile md:px-margin-desktop max-w-max-container mx-auto">
+<div class="text-center max-w-2xl mx-auto mb-16">
+<h2 class="font-manrope text-headline-lg font-bold text-primary mb-4">Agronomic Insights</h2>
+<p class="font-inter text-body-lg text-on-surface-variant">Data-driven strategies and technical updates for modern agricultural operations.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Article 1 -->
+<article class="group cursor-pointer">
+<div class="rounded-xl overflow-hidden aspect-[4/3] mb-6 relative">
+<img alt="Soil Analysis" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida/AP1WRLsVFULsDsipnvCe8Htj8ykM_6GJAawOit2-3C6gGCkRUKA-ItM5qkpXMElwA6-egyhdefCzH3UyzTXdt-624Ig_S1ADzT2kyUt2spwJ9wQHTHohFN27Y20Cs0jKAIYpv0uvz30niajStVMEm7Q6ZtYgmnYELlsU9rCkr1Ajam_7TpsSKgbF9yZFKDNKBPjjZPfYuyYj8CbSweoVK6MgOv0IiVtVQWn1vaHrn8CpCrCcplJMFMZnasqflHY">
+</div>
+<div class="flex items-center gap-4 text-label-sm text-on-surface-variant mb-3">
+<span class="bg-[#EFF4EF] text-primary px-2 py-1 rounded">Research</span>
+<span class="">Oct 12, 2024</span>
+</div>
+<h3 class="font-manrope text-headline-md font-bold text-on-surface mb-2 group-hover:text-primary transition-colors">Optimizing Nitrogen Retention in Volcanic Soils</h3>
+<p class="font-inter text-body-md text-on-surface-variant line-clamp-2">New studies reveal the impact of targeted biostimulants on nutrient uptake efficiency.</p>
+</article>
+<!-- Article 2 -->
+<article class="group cursor-pointer">
+<div class="rounded-xl overflow-hidden aspect-[4/3] mb-6 relative">
+<img alt="Crop Monitoring" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida/AP1WRLs4vrY4rONNNrCnJQSDWC9WhGjWKlxmLYV0TmkQZmTxKuWnSHGjZySOe7bQNu1414HH8a04IkMYWMtB-5eP_FpFQlquc7fHB-yoLEjkT0at6sg2CTHCJsUmAN2s2YsUcOn2jnm5kcVF2Dy21WVFSuFIp8CyEq1wRQ8tNHgVFMtqbDiOQccB4O5EgQEL7A7o9zC5ukDUABJidWvN_jp1H9ZGcz95xq2f85h50QlZ9eWQ-1XLWAH3xMLOfQI">
+</div>
+<div class="flex items-center gap-4 text-label-sm text-on-surface-variant mb-3">
+<span class="bg-[#EFF4EF] text-primary px-2 py-1 rounded">Technology</span>
+<span class="">Oct 05, 2024</span>
+</div>
+<h3 class="font-manrope text-headline-md font-bold text-on-surface mb-2 group-hover:text-primary transition-colors">Drone-Assisted Canopy Mapping for Fungicide Application</h3>
+<p class="font-inter text-body-md text-on-surface-variant line-clamp-2">Reducing input costs through variable-rate precision spraying based on real-time data.</p>
+</article>
+<!-- Article 3 -->
+<article class="group cursor-pointer">
+<div class="rounded-xl overflow-hidden aspect-[4/3] mb-6 relative">
+<img alt="Harvest Yield" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida/AP1WRLuQbVwXupqbyGeXjV95m6jC8-A3jk8LlRcC63kvgSGa7eYh49-6zjFecS0yuMVULfVZk0kIGjblQmC57IhlHE5qzrRrkORPycWVy2Vnkllx2uQsApsKfiPpOy9nB1SuLDkGvPEi84mpejwM6UpIwOdfIeuOJLQuDqO8W_BmBiuK2oGTDHL6ZP-rgup5fLs4VnHfCxDmmxgu5QmqN0-hyHoFKJLbiYtuDhm-ih5lCvF3zFkrTcUsddF9hnU">
+</div>
+<div class="flex items-center gap-4 text-label-sm text-on-surface-variant mb-3">
+<span class="bg-[#EFF4EF] text-primary px-2 py-1 rounded">Market Analysis</span>
+<span class="">Sep 28, 2024</span>
+</div>
+<h3 class="font-manrope text-headline-md font-bold text-on-surface mb-2 group-hover:text-primary transition-colors">Forecasting Commodity Pressures in Q4</h3>
+<p class="font-inter text-body-md text-on-surface-variant line-clamp-2">Strategic procurement advice for large-scale operators navigating global supply chain shifts.</p>
+</article>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest border-t border-outline-variant w-full">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-stack-lg w-full px-margin-desktop py-section-padding max-w-max-container mx-auto">
+<div class="col-span-1 md:col-span-1">
+<div class="font-manrope text-headline-md font-bold text-primary mb-4">
+                    AgriDistribute Premium
+                 </div>
+<p class="font-inter text-body-md text-on-surface-variant mb-6">
+                    Precision Stewardship through Scientific Rigor.
+                 </p>
+<p class="font-inter text-label-sm text-on-surface-variant">
+                    © 2024 AgriDistribute Industrial. All rights reserved.
+                 </p>
+</div>
+<div class="col-span-1">
+<h4 class="font-inter text-label-md font-semibold text-primary mb-4">Legal &amp; Compliance</h4>
+<ul class="space-y-3">
+<li class=""><a class="font-inter text-body-md text-on-surface-variant hover:text-secondary transition-all underline underline-offset-4" href="#">Privacy Policy</a></li>
+<li class=""><a class="font-inter text-body-md text-on-surface-variant hover:text-secondary transition-all underline underline-offset-4" href="#">Terms of Service</a></li>
+</ul>
+</div>
+<div class="col-span-1">
+<h4 class="font-inter text-label-md font-semibold text-primary mb-4">Certifications</h4>
+<ul class="space-y-3">
+<li class=""><a class="font-inter text-body-md text-on-surface-variant hover:text-secondary transition-all underline underline-offset-4" href="#">ISO 9001 Certified</a></li>
+<li class=""><a class="font-inter text-body-md text-on-surface-variant hover:text-secondary transition-all underline underline-offset-4" href="#">Global GAP</a></li>
+</ul>
+</div>
+<div class="col-span-1">
+<h4 class="font-inter text-label-md font-semibold text-primary mb-4">Support</h4>
+<ul class="space-y-3">
+<li class=""><a class="font-inter text-body-md text-on-surface-variant hover:text-secondary transition-all underline underline-offset-4" href="#">Contact Support</a></li>
+</ul>
+</div>
+</div>
+</footer>
+
+
+</body></html>

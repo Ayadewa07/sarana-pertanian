@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+
+<html lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Kontak - Sarana Pertanian</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Manrope:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary-fixed": "#171d1a",
+                        "inverse-on-surface": "#f1f1ef",
+                        "inverse-surface": "#2f3130",
+                        "on-error": "#ffffff",
+                        "on-primary-fixed-variant": "#234f38",
+                        "on-tertiary-fixed-variant": "#424845",
+                        "surface-container-low": "#f4f4f2",
+                        "tertiary": "#2a302d",
+                        "on-surface": "#1a1c1b",
+                        "surface-container": "#eeeeec",
+                        "tertiary-fixed": "#dfe4df",
+                        "tertiary-container": "#414643",
+                        "secondary": "#7e570a",
+                        "on-tertiary": "#ffffff",
+                        "surface-dim": "#dadad8",
+                        "secondary-container": "#ffc875",
+                        "tertiary-fixed-dim": "#c3c8c3",
+                        "surface-bright": "#f9f9f7",
+                        "outline": "#717972",
+                        "on-secondary-fixed": "#281800",
+                        "on-tertiary-container": "#aeb4af",
+                        "surface-tint": "#3b674e",
+                        "on-background": "#1a1c1b",
+                        "primary-fixed": "#bdeece",
+                        "on-primary-fixed": "#002112",
+                        "error-container": "#ffdad6",
+                        "surface-container-high": "#e8e8e6",
+                        "on-primary": "#ffffff",
+                        "outline-variant": "#c1c9c1",
+                        "on-secondary": "#ffffff",
+                        "on-surface-variant": "#414943",
+                        "on-secondary-fixed-variant": "#614000",
+                        "surface-container-highest": "#e2e3e1",
+                        "error": "#ba1a1a",
+                        "surface-variant": "#e2e3e1",
+                        "on-error-container": "#93000a",
+                        "surface-container-lowest": "#ffffff",
+                        "secondary-fixed-dim": "#f3bd6b",
+                        "primary-fixed-dim": "#a2d1b3",
+                        "inverse-primary": "#a2d1b3",
+                        "surface": "#f9f9f7",
+                        "secondary-fixed": "#ffddaf",
+                        "on-primary-container": "#8ebd9f",
+                        "primary-container": "#214d36",
+                        "primary": "#063621",
+                        "background": "#f9f9f7",
+                        "on-secondary-container": "#795204"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "stack-lg": "24px",
+                        "section-padding": "120px",
+                        "margin-mobile": "16px",
+                        "gutter": "24px",
+                        "max-container": "1280px",
+                        "stack-sm": "8px",
+                        "margin-desktop": "40px",
+                        "stack-md": "16px"
+                    },
+                    "fontFamily": {
+                        "headline-md": ["Manrope"],
+                        "label-sm": ["Inter"],
+                        "label-md": ["Inter"],
+                        "display-lg": ["Manrope"],
+                        "body-lg": ["Inter"],
+                        "display-lg-mobile": ["Manrope"],
+                        "body-md": ["Inter"],
+                        "headline-lg": ["Manrope"]
+                    },
+                    "fontSize": {
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "label-sm": ["12px", { "lineHeight": "16px", "fontWeight": "500" }],
+                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "display-lg": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "display-lg-mobile": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .icon-fill {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .faq-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+        .faq-item.active .faq-content {
+            max-height: 200px;
+        }
+        .faq-item.active .faq-icon {
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased selection:bg-primary-container selection:text-white">
+<!-- TopNavBar -->
+<nav class="sticky top-0 z-50 shadow-sm dark:shadow-none bg-surface dark:bg-surface-container-highest">
+<div class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop max-w-max-container mx-auto h-20">
+<!-- Brand -->
+<a class="text-headline-md font-headline-md text-primary dark:text-primary-fixed tracking-tight shrink-0" href="#">
+                Sarana Pertanian
+            </a>
+<!-- Navigation Links (Desktop) -->
+<div class="hidden md:flex items-center gap-8">
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed font-label-md text-label-md transition-colors duration-200 hover:text-primary" href="#">Home</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed font-label-md text-label-md transition-colors duration-200 hover:text-primary" href="#">Product</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed font-label-md text-label-md transition-colors duration-200 hover:text-primary" href="#">About Us</a>
+<a class="text-primary dark:text-primary-fixed border-b-2 border-primary dark:border-primary-fixed pb-1 font-label-md text-label-md opacity-80 transition-all duration-200" href="#">Kontak</a>
+</div>
+<!-- Actions -->
+<div class="flex items-center gap-4">
+<div class="hidden md:flex items-center text-primary dark:text-primary-fixed font-label-md text-label-md cursor-pointer hover:opacity-80 transition-opacity">
+                    Inquiry Cart
+                </div>
+<div class="flex gap-2">
+<button class="p-2 text-on-surface-variant hover:text-primary transition-colors flex items-center justify-center">
+<span class="material-symbols-outlined" data-icon="search">search</span>
+</button>
+<button class="p-2 text-on-surface-variant hover:text-primary transition-colors flex items-center justify-center">
+<span class="material-symbols-outlined" data-icon="shopping_cart">shopping_cart</span>
+</button>
+</div>
+</div>
+</div>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="relative w-full h-[400px] md:h-[500px] flex items-center justify-center bg-surface-container-high overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-r from-primary/90 to-primary/40 z-10"></div>
+<div class="absolute inset-0 bg-[url('placeholder')] bg-cover bg-center z-0" data-alt="A modern, high-tech agricultural laboratory or professional agronomy consultation room. High-key lighting, clean aesthetic, featuring agronomists in white coats reviewing data on tablets with lush green plants in the foreground. Corporate, trustworthy, premium atmosphere."></div>
+<div class="relative z-20 text-center px-margin-mobile md:px-margin-desktop max-w-3xl mx-auto mt-12">
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-white mb-stack-md">
+                    Hubungi Tim Agronomi Kami
+                </h1>
+<p class="font-body-lg text-body-lg text-inverse-on-surface/90">
+                    Kemitraan strategis untuk hasil panen optimal. Konsultasikan kebutuhan industri pertanian Anda dengan ahli kami.
+                </p>
+</div>
+</section>
+<!-- Contact Grid & Form Section -->
+<section class="py-section-padding px-margin-mobile md:px-margin-desktop max-w-max-container mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-gutter">
+<!-- Contact Information (Left Col) -->
+<div class="lg:col-span-5 flex flex-col gap-8">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-stack-sm">Informasi Institusi</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                            Jaringan operasional kami siap mendukung eskalasi bisnis agrikultur Anda dengan presisi.
+                        </p>
+</div>
+<div class="flex flex-col gap-6">
+<!-- Office -->
+<div class="flex items-start gap-4 p-6 bg-surface-container-lowest rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.05)] border border-surface-container-high/50">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center shrink-0 text-primary">
+<span class="material-symbols-outlined icon-fill" data-icon="domain">domain</span>
+</div>
+<div>
+<h3 class="font-label-md text-label-md text-on-surface mb-1">Kantor Pusat</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                                    Jl. Agrikultur Premium No. 12<br/>
+                                    Batu, Jawa Timur 65311<br/>
+                                    Indonesia
+                                </p>
+</div>
+</div>
+<!-- WhatsApp -->
+<div class="flex items-start gap-4 p-6 bg-surface-container-lowest rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.05)] border border-surface-container-high/50">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center shrink-0 text-primary">
+<span class="material-symbols-outlined icon-fill" data-icon="forum">forum</span>
+</div>
+<div>
+<h3 class="font-label-md text-label-md text-on-surface mb-1">Konsultasi Langsung (WhatsApp)</h3>
+<a class="font-body-md text-body-md text-primary font-medium hover:underline" href="#">
+                                    +62 811 2345 6789
+                                </a>
+<p class="font-body-sm text-sm text-on-surface-variant mt-1">Respon cepat untuk klien B2B.</p>
+</div>
+</div>
+<!-- Email -->
+<div class="flex items-start gap-4 p-6 bg-surface-container-lowest rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.05)] border border-surface-container-high/50">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center shrink-0 text-primary">
+<span class="material-symbols-outlined icon-fill" data-icon="mail">mail</span>
+</div>
+<div>
+<h3 class="font-label-md text-label-md text-on-surface mb-1">Email Korporat</h3>
+<a class="font-body-md text-body-md text-primary font-medium hover:underline" href="mailto:inquiry@saranapertanian.co.id">
+                                    inquiry@saranapertanian.co.id
+                                </a>
+</div>
+</div>
+<!-- Hours -->
+<div class="flex items-start gap-4 p-6 bg-surface-container-lowest rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.05)] border border-surface-container-high/50">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center shrink-0 text-primary">
+<span class="material-symbols-outlined icon-fill" data-icon="schedule">schedule</span>
+</div>
+<div>
+<h3 class="font-label-md text-label-md text-on-surface mb-1">Jam Operasional</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                                    Senin - Sabtu<br/>
+                                    08:00 - 17:00 WIB
+                                </p>
+</div>
+</div>
+</div>
+</div>
+<!-- Contact Form (Right Col) -->
+<div class="lg:col-span-7">
+<div class="bg-surface-container-lowest rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.05)] border border-surface-container-high/50 p-8 md:p-12 h-full">
+<h2 class="font-headline-md text-headline-md text-on-surface mb-2">Formulir Inkuiri</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8">
+                            Silakan isi detail di bawah ini. Tim ahli kami akan merespons dalam 1x24 jam kerja.
+                        </p>
+<form class="flex flex-col gap-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="flex flex-col gap-2">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider" for="name">Nama Lengkap / Instansi</label>
+<input class="w-full bg-surface-container-lowest border border-outline-variant rounded-md px-4 py-3 text-body-md text-on-surface focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors" id="name" placeholder="Masukkan nama..." type="text"/>
+</div>
+<div class="flex flex-col gap-2">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider" for="phone">Nomor Telepon / WA</label>
+<input class="w-full bg-surface-container-lowest border border-outline-variant rounded-md px-4 py-3 text-body-md text-on-surface focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors" id="phone" placeholder="+62..." type="tel"/>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider" for="subject">Subjek</label>
+<select class="w-full bg-surface-container-lowest border border-outline-variant rounded-md px-4 py-3 text-body-md text-on-surface focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors appearance-none bg-[url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%23414943%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpolyline%20points%3D%226%209%2012%2015%2018%209%22%3E%3C%2Fpolyline%3E%3C%2Fsvg%3E')] bg-no-repeat bg-[position:right_1rem_center] bg-[size:1.2em_1.2em] pr-10" id="subject">
+<option disabled="" selected="" value="">Pilih subjek inkuiri...</option>
+<option value="konsultasi">Konsultasi Produk</option>
+<option value="pengadaan">Pengadaan Skala Besar</option>
+<option value="kemitraan">Kemitraan Distribusi</option>
+<option value="lainnya">Lainnya</option>
+</select>
+</div>
+<div class="flex flex-col gap-2">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider" for="message">Pesan Detail</label>
+<textarea class="w-full bg-surface-container-lowest border border-outline-variant rounded-md px-4 py-3 text-body-md text-on-surface focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors resize-none" id="message" placeholder="Tuliskan spesifikasi kebutuhan Anda secara detail..." rows="5"></textarea>
+</div>
+<button class="mt-4 w-full md:w-auto self-start bg-primary-container text-white font-label-md text-label-md px-8 py-4 rounded-xl hover:bg-primary transition-colors shadow-sm flex items-center justify-center gap-2" type="button">
+                                Kirim Inkuiri
+                                <span class="material-symbols-outlined" data-icon="send">send</span>
+</button>
+</form>
+</div>
+</div>
+</div>
+</section>
+<!-- Map Section -->
+<section class="w-full bg-surface-container-low border-y border-outline-variant/30">
+<div class="w-full h-[400px] relative">
+<!-- Using a placeholder for map with data-location as requested -->
+<img class="w-full h-full object-cover" data-alt="A clean, modern satellite or street map view centered on Batu, East Java. The map style should be minimalist, using pale greens, greys, and muted tones consistent with the corporate aesthetic, without overly bright contrasting colors. A single elegant marker indicates a location." data-location="Batu, East Java" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-IMOENuo8H1uJrbrn_0z5OICLjsXv-Pa4fgDuioxYxBEijcbXvVXgD26OozeCnBTf6JIE2CCrgDEut3cd3m8_7RE7HxF4eXQMLMQuzlsmq7K5GrQGb29zYfZLG-SNo_SBe1zpFXQQifF_xf_UggvlkrelkJBf_CZZB2sNDUOVWbSvfDmzj4df4tqOlB6CRHIN8fyRSWs1rN_gmbOF68a3UmnEK63xsQXvB_xQwMaWtibzpU8tPdVj0IuVomcBlHSyls-DW6xxJ84"/>
+<div class="absolute inset-0 bg-primary/5 pointer-events-none"></div> <!-- subtle tint -->
+</div>
+</section>
+<!-- FAQ Section -->
+<section class="py-section-padding px-margin-mobile md:px-margin-desktop max-w-3xl mx-auto">
+<div class="text-center mb-12">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-4">Pertanyaan Umum (FAQ)</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                    Informasi esensial terkait operasional dan layanan Sarana Pertanian.
+                </p>
+</div>
+<div class="flex flex-col gap-4">
+<!-- FAQ Item 1 -->
+<div class="faq-item bg-surface-container-lowest border border-outline-variant/50 rounded-lg overflow-hidden">
+<button class="w-full flex items-center justify-between p-6 text-left focus:outline-none" onclick="this.parentElement.classList.toggle('active')">
+<span class="font-label-md text-label-md text-on-surface">Bagaimana jaminan keaslian produk yang disuplai?</span>
+<span class="material-symbols-outlined faq-icon transition-transform duration-300 text-on-surface-variant" data-icon="expand_more">expand_more</span>
+</button>
+<div class="faq-content bg-surface-container-low/50">
+<div class="p-6 pt-0 font-body-md text-body-md text-on-surface-variant">
+                            Seluruh produk kami disuplai langsung dari prinsipal resmi dan dilengkapi dengan Certificate of Analysis (CoA). Kami menerapkan protokol Quality Control yang ketat sebelum distribusi.
+                        </div>
+</div>
+</div>
+<!-- FAQ Item 2 -->
+<div class="faq-item bg-surface-container-lowest border border-outline-variant/50 rounded-lg overflow-hidden">
+<button class="w-full flex items-center justify-between p-6 text-left focus:outline-none" onclick="this.parentElement.classList.toggle('active')">
+<span class="font-label-md text-label-md text-on-surface">Apakah ada biaya untuk konsultasi agronomi?</span>
+<span class="material-symbols-outlined faq-icon transition-transform duration-300 text-on-surface-variant" data-icon="expand_more">expand_more</span>
+</button>
+<div class="faq-content bg-surface-container-low/50">
+<div class="p-6 pt-0 font-body-md text-body-md text-on-surface-variant">
+                            Konsultasi awal untuk analisis kebutuhan dan rekomendasi produk dasar tidak dikenakan biaya (Free of Charge) bagi klien B2B kami.
+                        </div>
+</div>
+</div>
+<!-- FAQ Item 3 -->
+<div class="faq-item bg-surface-container-lowest border border-outline-variant/50 rounded-lg overflow-hidden">
+<button class="w-full flex items-center justify-between p-6 text-left focus:outline-none" onclick="this.parentElement.classList.toggle('active')">
+<span class="font-label-md text-label-md text-on-surface">Berapa jangkauan distribusi logistik Sarana Pertanian?</span>
+<span class="material-symbols-outlined faq-icon transition-transform duration-300 text-on-surface-variant" data-icon="expand_more">expand_more</span>
+</button>
+<div class="faq-content bg-surface-container-low/50">
+<div class="p-6 pt-0 font-body-md text-body-md text-on-surface-variant">
+                            Fasilitas pergudangan kami di Batu mendukung distribusi skala nasional, dengan fokus utama pemenuhan kebutuhan di wilayah Jawa dan Indonesia Timur.
+                        </div>
+</div>
+</div>
+<!-- FAQ Item 4 -->
+<div class="faq-item bg-surface-container-lowest border border-outline-variant/50 rounded-lg overflow-hidden">
+<button class="w-full flex items-center justify-between p-6 text-left focus:outline-none" onclick="this.parentElement.classList.toggle('active')">
+<span class="font-label-md text-label-md text-on-surface">Bagaimana mekanisme minimum order (MOQ)?</span>
+<span class="material-symbols-outlined faq-icon transition-transform duration-300 text-on-surface-variant" data-icon="expand_more">expand_more</span>
+</button>
+<div class="faq-content bg-surface-container-low/50">
+<div class="p-6 pt-0 font-body-md text-body-md text-on-surface-variant">
+                            MOQ bervariasi bergantung pada kategori produk dan spesifikasi logistik. Silakan ajukan inkuiri melalui formulir di atas untuk mendapatkan penawaran yang disesuaikan (customized quotation).
+                        </div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container dark:bg-inverse-surface w-full py-section-padding px-margin-mobile md:px-margin-desktop">
+<div class="max-w-max-container mx-auto grid grid-cols-1 md:grid-cols-4 gap-stack-lg">
+<div class="md:col-span-1 flex flex-col gap-4">
+<div class="text-headline-sm font-headline-sm text-primary dark:text-primary-fixed">
+                    Sarana Pertanian
+                </div>
+<p class="font-body-md text-body-md text-on-surface-variant dark:text-surface-variant">
+                    Premium Stewardship in Agriculture.
+                </p>
+</div>
+<div class="md:col-span-3 flex flex-wrap gap-x-8 gap-y-4 md:justify-end items-center">
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed font-body-md text-body-md hover:underline transition-all cursor-pointer" href="#">Privacy Policy</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed font-body-md text-body-md hover:underline transition-all cursor-pointer" href="#">Terms of Service</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed font-body-md text-body-md hover:underline transition-all cursor-pointer" href="#">Scientific Rigor</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed font-body-md text-body-md hover:underline transition-all cursor-pointer" href="#">Investor Relations</a>
+<a class="text-primary dark:text-primary-fixed font-bold font-body-md text-body-md hover:underline transition-all cursor-pointer" href="#">Contact Support</a>
+</div>
+</div>
+<div class="max-w-max-container mx-auto mt-12 pt-8 border-t border-outline-variant/30 text-center">
+<p class="text-on-surface dark:text-inverse-on-surface font-body-md text-body-md">
+                © 2024 Sarana Pertanian Hub. Premium Stewardship in Agriculture.
+            </p>
+</div>
+</footer>
+</body></html>

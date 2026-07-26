@@ -1,0 +1,414 @@
+<!DOCTYPE html><html class="light" lang="en" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Kalingga 526 SL - AgriDistribute Premium</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Manrope:wght@600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary-fixed": "#dfe4df",
+                        "on-primary-fixed-variant": "#234f38",
+                        "primary": "#063621",
+                        "on-error-container": "#93000a",
+                        "error-container": "#ffdad6",
+                        "secondary": "#7e570a",
+                        "on-secondary-fixed": "#281800",
+                        "tertiary-container": "#414643",
+                        "on-tertiary-fixed": "#171d1a",
+                        "surface-tint": "#3b674e",
+                        "on-tertiary-fixed-variant": "#424845",
+                        "on-surface-variant": "#414943",
+                        "outline": "#717972",
+                        "surface-bright": "#f9f9f7",
+                        "secondary-container": "#ffc875",
+                        "surface-variant": "#e2e3e1",
+                        "primary-fixed": "#bdeece",
+                        "primary-fixed-dim": "#a2d1b3",
+                        "primary-container": "#214d36",
+                        "background": "#f9f9f7",
+                        "on-tertiary-container": "#aeb4af",
+                        "inverse-primary": "#a2d1b3",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary": "#ffffff",
+                        "on-primary-container": "#8ebd9f",
+                        "inverse-surface": "#2f3130",
+                        "secondary-fixed": "#ffddaf",
+                        "surface-container-high": "#e8e8e6",
+                        "on-primary": "#ffffff",
+                        "error": "#ba1a1a",
+                        "on-background": "#1a1c1b",
+                        "outline-variant": "#c1c9c1",
+                        "inverse-on-surface": "#f1f1ef",
+                        "secondary-fixed-dim": "#f3bd6b",
+                        "on-secondary-container": "#795204",
+                        "surface-dim": "#dadad8",
+                        "tertiary-fixed-dim": "#c3c8c3",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary-fixed-variant": "#614000",
+                        "on-surface": "#1a1c1b",
+                        "tertiary": "#2a302d",
+                        "surface-container-highest": "#e2e3e1",
+                        "surface-container": "#eeeeec",
+                        "surface": "#f9f9f7",
+                        "on-error": "#ffffff",
+                        "on-primary-fixed": "#002112",
+                        "surface-container-low": "#f4f4f2"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-desktop": "40px",
+                        "stack-md": "16px",
+                        "stack-lg": "24px",
+                        "max-container": "1280px",
+                        "stack-sm": "8px",
+                        "gutter": "24px",
+                        "section-padding": "120px",
+                        "margin-mobile": "16px"
+                    },
+                    "fontFamily": {
+                        "headline-lg": ["Manrope"],
+                        "headline-md": ["Manrope"],
+                        "label-sm": ["Inter"],
+                        "label-md": ["Inter"],
+                        "display-lg-mobile": ["Manrope"],
+                        "display-lg": ["Manrope"],
+                        "body-md": ["Inter"],
+                        "body-lg": ["Inter"]
+                    },
+                    "fontSize": {
+                        "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "label-sm": ["12px", { "lineHeight": "16px", "fontWeight": "500" }],
+                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "display-lg-mobile": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "display-lg": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }]
+                    }
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased flex flex-col min-h-screen">
+<!-- TopNavBar -->
+<header class="bg-surface border-b border-outline-variant shadow-sm docked full-width top-0 sticky z-50 transition-all duration-300">
+<div class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop max-w-max-container mx-auto h-20">
+<div class="font-manrope text-headline-md font-bold text-primary">AgriDistribute Premium</div>
+<nav class="hidden md:flex items-center gap-6"><a class="text-on-surface-variant font-manrope text-label-md font-label-md hover:text-primary transition-colors duration-200" href="/">Home</a><a class="text-primary border-b-2 border-primary pb-1 font-manrope text-label-md font-label-md hover:text-primary transition-colors duration-200" href="#">Product</a><a class="text-on-surface-variant font-manrope text-label-md font-label-md hover:text-primary transition-colors duration-200" href="/#about">About Us</a><a class="text-on-surface-variant font-manrope text-label-md font-label-md hover:text-primary transition-colors duration-200" href="#">Kontak</a></nav>
+<div class="flex items-center gap-4">
+<button class="hidden md:flex items-center gap-2 bg-primary-container text-on-primary rounded-lg px-4 py-2 font-label-md hover:opacity-90 transition-opacity">
+                    Inquiry Cart
+                </button>
+<button class="text-primary hover:text-primary-container transition-colors">
+<span class="material-symbols-outlined" data-icon="shopping_cart">shopping_cart</span>
+</button>
+<button class="text-primary hover:text-primary-container transition-colors">
+<span class="material-symbols-outlined" data-icon="account_circle">account_circle</span>
+</button>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</header>
+<main class="flex-grow">
+<!-- Breadcrumbs -->
+<div class="max-w-max-container mx-auto px-margin-mobile md:px-margin-desktop py-stack-md">
+<nav aria-label="Breadcrumb" class="flex text-label-sm text-on-surface-variant">
+<ol class="inline-flex items-center space-x-1 md:space-x-3">
+<li class="inline-flex items-center">
+<a class="inline-flex items-center hover:text-primary" href="#">Home</a>
+</li>
+<li class="">
+<div class="flex items-center">
+<span class="material-symbols-outlined text-[16px] mx-1">chevron_right</span>
+<a class="hover:text-primary" href="#">Products</a>
+</div>
+</li>
+<li class="">
+<div class="flex items-center">
+<span class="material-symbols-outlined text-[16px] mx-1">chevron_right</span>
+<a class="hover:text-primary" href="#">Nutrisi</a>
+</div>
+</li>
+<li aria-current="page" class="">
+<div class="flex items-center">
+<span class="material-symbols-outlined text-[16px] mx-1">chevron_right</span>
+<span class="text-primary font-medium">Kalingga 526 SL</span>
+</div>
+</li>
+</ol>
+</nav>
+</div>
+<!-- Main Product Section -->
+<section class="max-w-max-container mx-auto px-margin-mobile md:px-margin-desktop py-stack-lg md:py-stack-xl">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<!-- Left Column: Gallery -->
+<div class="flex flex-col gap-stack-md">
+<div class="bg-surface-container-lowest rounded-xl p-4 shadow-[0_4px_20px_rgba(0,0,0,0.05)] aspect-square flex items-center justify-center border border-surface-container">
+<img alt="Kalingga 526 SL Product Bottle" class="max-h-full object-contain mix-blend-multiply" src="https://lh3.googleusercontent.com/aida/AP1WRLu2Eny6yVgwMl_M65_aCFpyzkE5WUgdUPE5pGdnzzEInfiVAkN9DFuOWXcgIpt0GM54bWkKVJi7F3RLdHH6q28dtxFUah_C6A0bpgSGDxDDEzN_s3p0DXtJCent38GArVaP98BDmpwIACn-FEYN4XgLOtrZxaaQseXT8RTrga0cAT5AfsDJezZGtw7sya0Q6pK2rZFviX0lGAwWSyCuO8zlaDdLocCZh7XXU3-DtKSNwoOGE9QC3oSQ4lw">
+</div>
+<div class="grid grid-cols-4 gap-stack-sm">
+<div class="bg-surface-container-lowest rounded-lg p-2 shadow-sm border-2 border-primary cursor-pointer aspect-square flex items-center justify-center">
+<img alt="Thumbnail 1" class="max-h-full object-contain mix-blend-multiply" src="https://lh3.googleusercontent.com/aida/AP1WRLu2Eny6yVgwMl_M65_aCFpyzkE5WUgdUPE5pGdnzzEInfiVAkN9DFuOWXcgIpt0GM54bWkKVJi7F3RLdHH6q28dtxFUah_C6A0bpgSGDxDDEzN_s3p0DXtJCent38GArVaP98BDmpwIACn-FEYN4XgLOtrZxaaQseXT8RTrga0cAT5AfsDJezZGtw7sya0Q6pK2rZFviX0lGAwWSyCuO8zlaDdLocCZh7XXU3-DtKSNwoOGE9QC3oSQ4lw">
+</div>
+<div class="bg-surface-container-lowest rounded-lg p-2 shadow-sm border border-surface-container cursor-pointer opacity-70 hover:opacity-100 transition-opacity aspect-square flex items-center justify-center">
+<img class="max-h-full object-contain mix-blend-multiply" data-alt="Close up of agricultural fertilizer liquid pouring into soil, bright lighting, highly detailed macro photography, technical agricultural setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMoEVst-bfP9_3x0bDnIJ4C_HS-EG7aYS_esCE9bL4nRvar9sNchDVnT05qyFjx5YK3sAGxdFadfsEPxV2WgWfLbZewwZhdwFBC1Xe8WvTg_wTvUPns3COQYUk0SBm9S2C9LSzQEMbFkSFyCl0cnO9QDmPHEpbcHXX54J34pCbOoMPLOnxtr_Vn_qA0DUtIerd3WJDPNu4xfEWfkt3sGTrVPXkhEonno8WJluNWViR--9bxUVNYT8w4tMvnxBLhpOQncmMo4RiOOY">
+</div>
+<div class="bg-surface-container-lowest rounded-lg p-2 shadow-sm border border-surface-container cursor-pointer opacity-70 hover:opacity-100 transition-opacity aspect-square flex items-center justify-center">
+<img class="max-h-full object-cover rounded-md" data-alt="Field of healthy crops with large root vegetables, bright sunny day, professional agricultural photography, vibrant greens." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2Y-udhOj5ee1Th_MEhv-WBhCdvyjo1Se_8JmIxMcRZCZb1yxsQV07Ur2EdsWzq6CBnkoh2YEXIVNpl0Hdbxz77S_RoepDF4QKR0NLzRsQhSMUHu963p4DmyCkee_Fxy9KpKQ_6_rLkGsYY_o7a2L3d9jeiGkIuNXRTxf5iURqo45FfW_2CjGOcoIGeFCB67gumBEoiaspg4ip8iAw_mrPBrotKyJwMqakmmsoYvGbLJ2ZKetSkhewyzI5tmxTcymlEkvoeBxc5zA">
+</div>
+</div>
+</div>
+<!-- Right Column: Info -->
+<div class="flex flex-col gap-stack-lg justify-center">
+<div>
+<div class="inline-flex items-center px-2 py-1 rounded-full bg-[#EFF4EF] text-primary text-label-sm mb-stack-sm">
+                            Nutrisi Umbi &amp; Buah
+                        </div>
+<h1 class="font-headline-lg-mobile md:font-headline-lg text-primary mb-stack-sm">Kalingga 526 SL</h1>
+<p class="font-headline-md text-on-surface">Rp 85.000 <span class="text-body-md text-on-surface-variant font-normal">/ 250ml</span></p>
+</div>
+<p class="text-body-lg text-on-surface-variant border-l-4 border-primary pl-4">
+                        Kalium cair konsentrasi tinggi untuk pembesaran umbi dan buah pada tanaman hortikultura. Formulasi khusus untuk penyerapan optimal.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-stack-md pt-stack-md">
+<button class="flex-1 bg-primary-container text-on-primary rounded-xl py-3 px-6 font-label-md flex items-center justify-center gap-2 hover:bg-primary transition-colors shadow-md">
+<span class="material-symbols-outlined" data-icon="add_shopping_cart">add_shopping_cart</span>
+                            Add to Inquiry
+                        </button>
+<button class="flex-1 bg-transparent border-2 border-primary-container text-primary-container rounded-xl py-3 px-6 font-label-md flex items-center justify-center gap-2 hover:bg-[#EFF4EF] transition-colors">
+<svg class="w-5 h-5 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"></path></svg>
+                            Buy via WhatsApp
+                        </button>
+</div>
+<div class="flex items-center gap-4 text-label-sm text-on-surface-variant pt-4 border-t border-surface-variant">
+<div class="flex items-center gap-1"><span class="material-symbols-outlined text-[18px]">verified</span> ISO 9001 Certified</div>
+<div class="flex items-center gap-1"><span class="material-symbols-outlined text-[18px]">local_shipping</span> Nationwide Delivery</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Tabs/Sections -->
+<section class="bg-surface-container-low py-section-padding">
+<div class="max-w-max-container mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-gutter">
+<!-- Left: Navigation (Sticky on desktop) -->
+<div class="lg:col-span-1">
+<div class="sticky top-28 bg-surface-container-lowest rounded-xl p-6 shadow-[0_4px_20px_rgba(0,0,0,0.05)] border border-surface-container hidden lg:block">
+<h3 class="font-headline-md text-primary mb-6">Product Details</h3>
+<ul class="space-y-4">
+<li class=""><a class="text-primary font-medium border-l-2 border-primary pl-3 block" href="#description">Description</a></li>
+<li class=""><a class="text-on-surface-variant hover:text-primary transition-colors pl-3 block" href="#benefits">Benefits</a></li>
+<li class=""><a class="text-on-surface-variant hover:text-primary transition-colors pl-3 block" href="#specifications">Specifications</a></li>
+<li class=""></li>
+</ul>
+</div>
+</div>
+<!-- Right: Content -->
+<div class="lg:col-span-2 flex flex-col gap-section-padding">
+<div class="scroll-mt-32" id="description">
+<h2 class="font-headline-md text-primary mb-stack-md flex items-center gap-2">
+<span class="material-symbols-outlined text-surface-tint">info</span> Description
+                            </h2>
+<div class="bg-surface-container-lowest rounded-xl p-8 shadow-[0_4px_20px_rgba(0,0,0,0.05)] text-body-md text-on-surface border border-surface-container leading-relaxed">
+<p class="mb-4">Kalingga 526 SL adalah pupuk cair makro ganda yang diformulasikan khusus dengan teknologi modern untuk memberikan asupan Kalium (K) konsentrasi tinggi yang sangat dibutuhkan tanaman pada fase generatif.</p>
+<p class="">Dengan bentuk Soluble Liquid (SL), nutrisi ini sangat mudah larut dalam air dan langsung diserap oleh stomata daun maupun jaringan akar, memastikan translokasi karbohidrat dari daun ke organ penyimpanan (umbi/buah) berjalan maksimal tanpa hambatan residu klorida (bebas klor).</p>
+</div>
+</div>
+<div class="scroll-mt-32" id="benefits">
+<h2 class="font-headline-md text-primary mb-stack-md flex items-center gap-2">
+<span class="material-symbols-outlined text-surface-tint">psychiatry</span> Key Benefits
+                            </h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-stack-md">
+<div class="bg-surface-container-lowest rounded-xl p-6 shadow-[0_4px_20px_rgba(0,0,0,0.05)] border border-surface-container flex gap-4">
+<div class="bg-[#EFF4EF] p-2 rounded-lg h-fit">
+<span class="material-symbols-outlined text-primary">weight</span>
+</div>
+<div>
+<h4 class="font-label-md text-primary mb-1">Meningkatkan Bobot</h4>
+<p class="text-body-md text-on-surface-variant text-sm">Secara signifikan meningkatkan bobot dan ukuran umbi serta buah pada panen akhir.</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-6 shadow-[0_4px_20px_rgba(0,0,0,0.05)] border border-surface-container flex gap-4">
+<div class="bg-[#EFF4EF] p-2 rounded-lg h-fit">
+<span class="material-symbols-outlined text-primary">shield_with_heart</span>
+</div>
+<div>
+<h4 class="font-label-md text-primary mb-1">Daya Tahan</h4>
+<p class="text-body-md text-on-surface-variant text-sm">Memperkuat daya tahan tanaman terhadap penyakit dan stres lingkungan (kekeringan).</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-6 shadow-[0_4px_20px_rgba(0,0,0,0.05)] border border-surface-container flex gap-4">
+<div class="bg-[#EFF4EF] p-2 rounded-lg h-fit">
+<span class="material-symbols-outlined text-primary">diamond</span>
+</div>
+<div>
+<h4 class="font-label-md text-primary mb-1">Kualitas Visual</h4>
+<p class="text-body-md text-on-surface-variant text-sm">Hasil panen lebih mengkilap, warna lebih cerah, dan bentuk lebih simetris sempurna.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="scroll-mt-32" id="specifications">
+<h2 class="font-headline-md text-primary mb-stack-md flex items-center gap-2">
+<span class="material-symbols-outlined text-surface-tint">science</span> Technical Specifications
+                            </h2>
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.05)] border border-surface-container">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-[#EFF4EF] text-primary font-label-md">
+<th class="p-4 border-b border-outline-variant">Parameter</th>
+<th class="p-4 border-b border-outline-variant">Value</th>
+</tr>
+</thead>
+<tbody class="text-body-md text-on-surface">
+<tr class="border-b border-surface-variant hover:bg-surface-bright transition-colors">
+<td class="p-4 font-medium">Bahan Aktif</td>
+<td class="p-4">Kalium Soluble (K2O) 526 g/l</td>
+</tr>
+<tr class="border-b border-surface-variant hover:bg-surface-bright transition-colors">
+<td class="p-4 font-medium">Formulasi</td>
+<td class="p-4">Soluble Liquid (SL)</td>
+</tr>
+<tr class="border-b border-surface-variant hover:bg-surface-bright transition-colors">
+<td class="p-4 font-medium">pH</td>
+<td class="p-4">6.5 - 7.0 (Netral)</td>
+</tr>
+<tr class="hover:bg-surface-bright transition-colors">
+<td class="p-4 font-medium">Warna</td>
+<td class="p-4">Cokelat Bening</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="scroll-mt-32" id="downloads">
+
+<div class="flex flex-col sm:flex-row gap-4">
+
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Related Products -->
+<section class="max-w-max-container mx-auto px-margin-mobile md:px-margin-desktop py-section-padding">
+<h2 class="font-headline-md text-primary mb-stack-lg text-center">Complementary Solutions</h2>
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-gutter">
+<!-- Product Card 1 -->
+<div class="bg-surface-container-lowest rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.05)] border border-surface-container overflow-hidden group hover:shadow-[0_12px_40px_rgba(23,54,36,0.08)] transition-all flex flex-col">
+<div class="p-6 bg-surface-bright flex justify-center items-center aspect-[4/3]">
+<img alt="Imsmell 250ml" class="max-h-full object-contain group-hover:scale-105 transition-transform duration-300 mix-blend-multiply" src="https://lh3.googleusercontent.com/aida/AP1WRLt8MfnfOKT_woGMMIIdorybgxPYf5cjzboL6eI8Y-z0bRv7JHrwxttb1QKrw9F4jsg2NVU6S_Eu3lDDndcke9UiSsuT5O6-8Hn2nyqYfHziTvY3lbFK0uliG68U8tIUU12m1S57DKks_F2cc-8c7v3xj9op6njCJlCThJjUT8t4DRvdwHKs5Oeh0yItlHfYTUSYR46OMdTfgO9L6CAoYWiwl03r2adXCIzVz7ksolcDxQywinFXAXmFlzQ">
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<div class="text-label-sm text-surface-tint mb-2 font-medium">Bio-Stimulant</div>
+<h3 class="font-headline-md text-primary mb-2 text-lg">Imsmell 250ml</h3>
+<p class="text-body-md text-on-surface-variant line-clamp-2 mb-4 text-sm flex-grow">Meningkatkan aktivitas mikroorganisme tanah untuk penyerapan unsur hara maksimal.</p>
+<div class="flex items-center justify-between mt-auto pt-4 border-t border-surface-variant">
+<span class="font-label-md text-primary">View Details</span>
+<span class="material-symbols-outlined text-primary">arrow_forward</span>
+</div>
+</div>
+</div>
+<!-- Product Card 2 -->
+<div class="bg-surface-container-lowest rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.05)] border border-surface-container overflow-hidden group hover:shadow-[0_12px_40px_rgba(23,54,36,0.08)] transition-all flex flex-col">
+<div class="p-6 bg-surface-bright flex justify-center items-center aspect-[4/3]">
+<img alt="Barikade 250ml" class="max-h-full object-contain group-hover:scale-105 transition-transform duration-300 mix-blend-multiply" src="https://lh3.googleusercontent.com/aida/AP1WRLvfYa7Ezgt_jV4yZZFYLEcItcaoRQehkWuaJqpJqB5IAbtQiuO965o2tpvWUPMfLRQhy-VWncZDeoucQg72zJpZZuniWwmvW131RVsD6JKoMrXJLLv_WLH4vYveztx0wA7o9r0T_ezgZB8IyTCYlrqZI--UZpcg2A1cCMsB_JK0wNWA9B3r-C3PTLiBmKy9q4eaADWkkCtJPJJ4Tp5xFRZpleaWxmqqwYVm2No3Gutl2I0fgSsaxk5kzuE">
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<div class="text-label-sm text-surface-tint mb-2 font-medium">Crop Protection</div>
+<h3 class="font-headline-md text-primary mb-2 text-lg">Barikade 250ml</h3>
+<p class="text-body-md text-on-surface-variant line-clamp-2 mb-4 text-sm flex-grow">Pelindung sistemik tanaman dari serangan jamur patogen pada fase pembesaran umbi.</p>
+<div class="flex items-center justify-between mt-auto pt-4 border-t border-surface-variant">
+<span class="font-label-md text-primary">View Details</span>
+<span class="material-symbols-outlined text-primary">arrow_forward</span>
+</div>
+</div>
+</div>
+<!-- Product Card 3 -->
+<div class="bg-surface-container-lowest rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.05)] border border-surface-container overflow-hidden group hover:shadow-[0_12px_40px_rgba(23,54,36,0.08)] transition-all flex flex-col">
+<div class="p-6 bg-[#EFF4EF] flex justify-center items-center aspect-[4/3] relative">
+<div class="absolute inset-0 opacity-20" data-alt="Abstract subtle geometric grid pattern in light green, representing agricultural science and precision, seamless texture, modern minimal aesthetic." style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuAuMthbPVMsGB0thCVmcLw2twhVc8ADb8BPSgHqzwR1NFz0GugICl3zXrILIMjFC_o0MtdCV5kFMPudjR0qXvFfwpXG06KNcym6DvYwA0bk88jKkTH_gkciKKGgb8KExSfqElCv_dXTs8wjLMFAfUfhDArGUakYXYrTasX7LEvK1FaSnYOKvgQ-rPZfxlMEQ7VVn1Gz_gyIxE7xkQ5eiI0sBj0mdMjKFkactnUK_t7LCeGLCoshztNrVrjcrue20vEz0ggn43U6vxg&quot;); background-size: cover; background-position: center center;"></div>
+<img alt="Kalingga 500ml" class="max-h-full object-contain group-hover:scale-105 transition-transform duration-300 mix-blend-multiply relative z-10" src="https://lh3.googleusercontent.com/aida/AP1WRLu2Eny6yVgwMl_M65_aCFpyzkE5WUgdUPE5pGdnzzEInfiVAkN9DFuOWXcgIpt0GM54bWkKVJi7F3RLdHH6q28dtxFUah_C6A0bpgSGDxDDEzN_s3p0DXtJCent38GArVaP98BDmpwIACn-FEYN4XgLOtrZxaaQseXT8RTrga0cAT5AfsDJezZGtw7sya0Q6pK2rZFviX0lGAwWSyCuO8zlaDdLocCZh7XXU3-DtKSNwoOGE9QC3oSQ4lw">
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<div class="text-label-sm text-secondary-container bg-secondary px-2 py-0.5 rounded-full w-fit mb-2 font-medium text-[10px]">Value Size</div>
+<h3 class="font-headline-md text-primary mb-2 text-lg">Kalingga 526 SL - 500ml</h3>
+<p class="text-body-md text-on-surface-variant line-clamp-2 mb-4 text-sm flex-grow">Kemasan ekonomis untuk perkebunan skala besar. Konsentrasi nutrisi identik.</p>
+<div class="flex items-center justify-between mt-auto pt-4 border-t border-surface-variant">
+<span class="font-label-md text-primary">View Details</span>
+<span class="material-symbols-outlined text-primary">arrow_forward</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest border-t border-outline-variant full-width">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-stack-lg w-full px-margin-mobile md:px-margin-desktop py-section-padding max-w-max-container mx-auto">
+<div class="col-span-1 md:col-span-1">
+<div class="font-manrope text-headline-md font-bold text-primary mb-4">AgriDistribute Industrial</div>
+<p class="text-label-sm text-on-surface-variant">© 2024 AgriDistribute Industrial. All rights reserved. Precision Stewardship through Scientific Rigor.</p>
+</div>
+<div class="col-span-1 md:col-span-3 grid grid-cols-2 md:grid-cols-4 gap-4">
+<a class="text-on-surface-variant font-inter text-body-md font-body-md hover:text-secondary transition-all underline underline-offset-4" href="#">Privacy Policy</a>
+<a class="text-on-surface-variant font-inter text-body-md font-body-md hover:text-secondary transition-all underline underline-offset-4" href="#">Terms of Service</a>
+<a class="text-on-surface-variant font-inter text-body-md font-body-md hover:text-secondary transition-all underline underline-offset-4" href="#">ISO 9001 Certified</a>
+<a class="text-on-surface-variant font-inter text-body-md font-body-md hover:text-secondary transition-all underline underline-offset-4" href="#">Global GAP</a>
+<a class="text-on-surface-variant font-inter text-body-md font-body-md hover:text-secondary transition-all underline underline-offset-4" href="#">Contact Support</a>
+</div>
+</div>
+</footer>
+<!-- Sticky Purchase Bar (Mobile/Bottom) -->
+<div class="fixed bottom-0 left-0 w-full bg-surface-container-lowest border-t border-outline-variant shadow-[0_-4px_20px_rgba(0,0,0,0.05)] p-4 transform translate-y-full transition-transform duration-300 z-40 md:hidden" id="sticky-purchase">
+<div class="max-w-max-container mx-auto flex items-center justify-between gap-4">
+<div class="flex items-center gap-3">
+<img alt="Kalingga Icon" class="h-10 w-10 object-contain mix-blend-multiply border border-surface-variant rounded" src="https://lh3.googleusercontent.com/aida/AP1WRLu2Eny6yVgwMl_M65_aCFpyzkE5WUgdUPE5pGdnzzEInfiVAkN9DFuOWXcgIpt0GM54bWkKVJi7F3RLdHH6q28dtxFUah_C6A0bpgSGDxDDEzN_s3p0DXtJCent38GArVaP98BDmpwIACn-FEYN4XgLOtrZxaaQseXT8RTrga0cAT5AfsDJezZGtw7sya0Q6pK2rZFviX0lGAwWSyCuO8zlaDdLocCZh7XXU3-DtKSNwoOGE9QC3oSQ4lw">
+<div>
+<div class="font-label-md text-primary">Kalingga 526 SL</div>
+<div class="text-label-sm text-on-surface-variant">Rp 85.000</div>
+</div>
+</div>
+<button class="bg-primary-container text-on-primary rounded-lg py-2 px-4 font-label-sm flex items-center justify-center gap-1 shadow-md whitespace-nowrap">
+<span class="material-symbols-outlined text-[18px]" data-icon="add_shopping_cart">add_shopping_cart</span>
+                Inquiry
+            </button>
+</div>
+</div>
+<script>
+        // Simple script to show sticky purchase bar on scroll for mobile
+        window.addEventListener('scroll', () => {
+            const stickyBar = document.getElementById('sticky-purchase');
+            if (window.scrollY > 300) {
+                stickyBar.classList.remove('translate-y-full');
+            } else {
+                stickyBar.classList.add('translate-y-full');
+            }
+        });
+    </script>
+
+
+</body></html>

@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "title": "Optimizing Nitrogen Retention in Volcanic Soils",
+    "category": "Research",
+    "date": "2024-10-12",
+    "excerpt": "New studies reveal the impact of targeted biostimulants on nutrient uptake efficiency.",
+    "content": "Pengelolaan hara nitrogen pada tanah vulkanik merupakan tantangan utama dalam pertanian komersial. Sifat tanah vulkanik yang memiliki permeabilitas tinggi sering menyebabkan pencucian (leaching) unsur N sebelum sempat diserap secara optimal oleh sistem perakaran tanaman.\n\nStudi terbaru dari tim agronomis mengungkapkan bahwa penggunaan biostimulan berbasis asam humat dan bakteri fiksasi nitrogen secara signifikan mampu mengikat ion nitrat di lapisan perakaran utama.\n\nHasil uji coba lapangan menunjukkan peningkatan efisiensi penyerapan nitrogen hingga 35%, yang berdampak langsung pada bobot hasil panen serta penurunan biaya input pupuk sintesis hingga 20%. Penerapan teknologi ini sangat direkomendasikan untuk lahan dataran tinggi dan lereng gunung api.",
+    "image": "gambar/image_from_https_images.unsplash.com_photo_1668491028217_2ba01ec8b0bf_auto/screen.png"
+  },
+  {
+    "id": 2,
+    "title": "Drone-Assisted Canopy Mapping for Fungicide Application",
+    "category": "Technology",
+    "date": "2024-10-05",
+    "excerpt": "Reducing input costs through variable-rate precision spraying based on real-time data.",
+    "image": "gambar/image_from_https_images.unsplash.com_photo_1651478211539_0728e04a7e5c_auto/screen.png",
+    "content": "Penerapan teknologi pemetaan kanopi menggunakan drone berkamera multispektral kini menjadi standar baru dalam manajemen perlindungan tanaman skala industri.\n\nDengan indeks vegetasi NDVI dan NDRE yang dihasilkan secara real-time, agronomis dapat mengidentifikasi area lahan yang terinfeksi patogen jamur sebelum gejala visual terlihat secara kasat mata.\n\nHal ini memungkinkan pengaplikasian fungisida secara presisi (variable-rate spraying) hanya pada titik-titik yang membutuhkan. Hasilnya, konsumsi bahan aktif fungisida berkurang hingga 40%, menekan risiko resistensi patogen, dan menghemat operasional semprot secara signifikan."
+  },
+  {
+    "id": 3,
+    "title": "Forecasting Commodity Pressures in Q4",
+    "category": "Market Analysis",
+    "date": "2024-09-28",
+    "excerpt": "Strategic procurement advice for large-scale operators navigating global supply chain shifts.",
+    "image": "gambar/image_from_https_images.unsplash.com_photo_1690292885661_3818e5fe9067_auto/screen.png",
+    "content": "Dinamika rantai pasok global dan perubahan pola cuaca ekstrem memicu fluktuasi harga komoditas pangan utama pada kuartal keempat.\n\nLaporan analisis pasar ini memberikan panduan pengadaan strategis bagi pengelola agribisnis dan perusahaan perkebunan. Beberapa poin kunci mencakup strategi hedging input pupuk impor, antisipasi kenaikan biaya logistik antar-pulau, serta proyeksi harga jual pasca-panen.\n\nDengan perencanaan pengadaan awal dan pemanfaatan kontrak pasokan jangka panjang bersama distributor resmi, pelaku industri dapat mengamankan marjin margin keuntungan di tengah ketidakpastian pasar."
+  }
+]

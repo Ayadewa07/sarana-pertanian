@@ -1,0 +1,20 @@
+{
+  "hero": {
+    "title": "Tentang Sarana Pertanian",
+    "subtitle": "Mitra strategis untuk pertanian presisi Indonesia"
+  },
+  "story": {
+    "title": "Membangun Kepercayaan Melalui Keahlian Agronomi Modern",
+    "paragraphs": [
+      "Sarana Pertanian berdiri sebagai jembatan vital antara potensi alam dan rigor ilmiah. Kami menyuplai operasi skala industri dengan peralatan kimia dan biologis presisi yang dibutuhkan untuk menjamin kepastian hasil panen.",
+      "Stewardship kami memastikan bahwa setiap input dioptimalkan untuk output maksimal, meminimalkan dampak ekologis sambil memaksimalkan pengembalian ekonomi."
+    ],
+    "image": "gambar/image_from_https_images.unsplash.com_photo_1593463897552_69da7e8343eb_auto/screen.png"
+  },
+  "vision": "Menjadi distributor sarana pertanian terdepan yang menghadirkan kepastian hasil panen melalui pendekatan ilmiah dan teknologi presisi di seluruh Indonesia.",
+  "mission": [
+    "Menyediakan produk pertanian berkualitas tinggi dari produsen terpercaya",
+    "Memberikan konsultasi agronomi berbasis data untuk optimasi hasil panen",
+    "Mendorong adopsi teknologi pertanian presisi di kalangan petani Indonesia"
+  ]
+}

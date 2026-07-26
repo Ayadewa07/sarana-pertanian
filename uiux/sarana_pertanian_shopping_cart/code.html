@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Inquiry Cart - AgriDistribute Premium</title>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style>
+        .material-symbols-outlined {
+            font-family: 'Material Symbols Outlined';
+            font-weight: normal;
+            font-style: normal;
+            font-size: 24px;
+            line-height: 1;
+            letter-spacing: normal;
+            text-transform: none;
+            display: inline-block;
+            white-space: nowrap;
+            word-wrap: normal;
+            direction: ltr;
+            -webkit-font-feature-settings: 'liga';
+            -webkit-font-smoothing: antialiased;
+        }
+        
+        .shadow-soft {
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+        }
+        
+        .shadow-overlay {
+            box-shadow: 0 12px 40px rgba(23, 54, 36, 0.08);
+        }
+        
+        /* Custom Stepper Input Reset */
+        input[type="number"]::-webkit-inner-spin-button,
+        input[type="number"]::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+        input[type="number"] {
+            -moz-appearance: textfield;
+        }
+    </style>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-primary": "#ffffff",
+                    "error-container": "#ffdad6",
+                    "primary": "#063621",
+                    "surface-container-low": "#f4f4f2",
+                    "outline-variant": "#c1c9c1",
+                    "on-tertiary": "#ffffff",
+                    "on-secondary-container": "#795204",
+                    "secondary-fixed-dim": "#f3bd6b",
+                    "on-tertiary-fixed": "#171d1a",
+                    "outline": "#717972",
+                    "tertiary-fixed-dim": "#c3c8c3",
+                    "tertiary": "#2a302d",
+                    "on-surface-variant": "#414943",
+                    "secondary": "#7e570a",
+                    "on-primary-container": "#8ebd9f",
+                    "inverse-surface": "#2f3130",
+                    "on-background": "#1a1c1b",
+                    "on-secondary-fixed": "#281800",
+                    "on-error-container": "#93000a",
+                    "surface-dim": "#dadad8",
+                    "surface-container-high": "#e8e8e6",
+                    "on-surface": "#1a1c1b",
+                    "on-secondary": "#ffffff",
+                    "primary-container": "#214d36",
+                    "inverse-primary": "#a2d1b3",
+                    "primary-fixed-dim": "#a2d1b3",
+                    "tertiary-fixed": "#dfe4df",
+                    "secondary-fixed": "#ffddaf",
+                    "tertiary-container": "#414643",
+                    "inverse-on-surface": "#f1f1ef",
+                    "surface-variant": "#e2e3e1",
+                    "primary-fixed": "#bdeece",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-container-highest": "#e2e3e1",
+                    "surface-bright": "#f9f9f7",
+                    "secondary-container": "#ffc875",
+                    "on-tertiary-container": "#aeb4af",
+                    "on-primary-fixed-variant": "#234f38",
+                    "surface-container": "#eeeeec",
+                    "surface": "#f9f9f7",
+                    "error": "#ba1a1a",
+                    "background": "#f9f9f7",
+                    "surface-tint": "#3b674e",
+                    "on-tertiary-fixed-variant": "#424845",
+                    "on-secondary-fixed-variant": "#614000",
+                    "on-error": "#ffffff",
+                    "on-primary-fixed": "#002112"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px",
+                    "card": "16px",
+                    "btn": "12px"
+            },
+            "spacing": {
+                    "stack-lg": "24px",
+                    "max-container": "1280px",
+                    "stack-sm": "8px",
+                    "margin-desktop": "40px",
+                    "gutter": "24px",
+                    "stack-md": "16px",
+                    "section-padding": "120px",
+                    "margin-mobile": "16px"
+            },
+            "fontFamily": {
+                    "headline-lg": [
+                            "Manrope"
+                    ],
+                    "display-lg": [
+                            "Manrope"
+                    ],
+                    "display-lg-mobile": [
+                            "Manrope"
+                    ],
+                    "body-md": [
+                            "Inter"
+                    ],
+                    "label-sm": [
+                            "Inter"
+                    ],
+                    "body-lg": [
+                            "Inter"
+                    ],
+                    "label-md": [
+                            "Inter"
+                    ],
+                    "headline-md": [
+                            "Manrope"
+                    ]
+            },
+            "fontSize": {
+                    "headline-lg": [
+                            "32px",
+                            {
+                                    "lineHeight": "40px",
+                                    "letterSpacing": "-0.01em",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "display-lg": [
+                            "56px",
+                            {
+                                    "lineHeight": "64px",
+                                    "letterSpacing": "-0.02em",
+                                    "fontWeight": "700"
+                            }
+                    ],
+                    "display-lg-mobile": [
+                            "40px",
+                            {
+                                    "lineHeight": "48px",
+                                    "letterSpacing": "-0.01em",
+                                    "fontWeight": "700"
+                            }
+                    ],
+                    "body-md": [
+                            "16px",
+                            {
+                                    "lineHeight": "24px",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "label-sm": [
+                            "12px",
+                            {
+                                    "lineHeight": "16px",
+                                    "fontWeight": "500"
+                            }
+                    ],
+                    "body-lg": [
+                            "18px",
+                            {
+                                    "lineHeight": "28px",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "label-md": [
+                            "14px",
+                            {
+                                    "lineHeight": "20px",
+                                    "letterSpacing": "0.05em",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "headline-md": [
+                            "24px",
+                            {
+                                    "lineHeight": "32px",
+                                    "fontWeight": "600"
+                            }
+                    ]
+            }
+    },
+        },
+      }
+    </script>
+</head>
+<body class="bg-background text-on-surface antialiased font-body-md">
+<!-- Top Navigation Anchor -->
+<header class="bg-surface dark:bg-surface-dim border-b border-outline-variant shadow-sm w-full top-0 sticky z-50">
+<div class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop max-w-max-container mx-auto h-20">
+<!-- Brand Logo -->
+<a class="font-headline-md text-headline-md text-primary dark:text-primary-fixed" href="#">
+                AgriDistribute Premium
+            </a>
+<!-- Navigation Links (Hidden on Mobile, explicit styling applied) -->
+<nav class="hidden md:flex gap-stack-lg items-center font-label-md text-label-md">
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200" href="#">Products</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200" href="#">Solutions</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200" href="#">Sustainability</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200" href="#">About Us</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200" href="#">Insights</a>
+</nav>
+<!-- Trailing Actions -->
+<div class="flex items-center gap-stack-md text-primary dark:text-primary-fixed">
+<button aria-label="Inquiry Cart" class="relative hover:opacity-80 transition-opacity duration-150 p-2">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">shopping_cart</span>
+<!-- Active Cart Indicator -->
+<span class="absolute top-1 right-1 flex h-3 w-3">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-3 w-3 bg-secondary"></span>
+</span>
+</button>
+<button aria-label="Account" class="hover:opacity-80 transition-opacity duration-150 p-2">
+<span class="material-symbols-outlined">account_circle</span>
+</button>
+<!-- Trailing Primary Action (Hidden on mobile for space, text link equivalent) -->
+<span class="hidden md:inline font-label-md text-label-md text-primary font-bold border-b-2 border-primary pb-1">Inquiry Cart</span>
+</div>
+</div>
+</header>
+<!-- Main Layout -->
+<main class="w-full max-w-max-container mx-auto px-margin-mobile md:px-margin-desktop py-stack-lg md:py-margin-desktop">
+<!-- Header Section -->
+<div class="mb-stack-lg border-b border-outline-variant pb-stack-md flex items-end justify-between">
+<div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-primary">Keranjang Konsultasi</h1>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">Tinjau produk yang Anda pilih sebelum melanjutkan ke konsultasi ahli via WhatsApp.</p>
+</div>
+<div class="hidden md:block font-label-md text-label-md bg-[#EFF4EF] text-primary-container px-3 py-1 rounded-full">
+                3 Item Terpilih
+            </div>
+</div>
+<!-- Two Column Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+<!-- Left Column: Cart Items -->
+<div class="lg:col-span-8 flex flex-col gap-stack-lg">
+<!-- Cart Item 1: Kalingga 526 SL -->
+<div class="bg-surface-container-lowest rounded-card shadow-soft p-stack-md md:p-stack-lg flex flex-col md:flex-row gap-stack-md border border-surface-container-highest relative group transition-all duration-300 hover:shadow-overlay">
+<!-- Image -->
+<div class="w-full md:w-32 h-40 bg-surface-container flex-shrink-0 rounded-lg overflow-hidden border border-outline-variant/30">
+<img alt="" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AP1WRLu2Eny6yVgwMl_M65_aCFpyzkE5WUgdUPE5pGdnzzEInfiVAkN9DFuOWXcgIpt0GM54bWkKVJi7F3RLdHH6q28dtxFUah_C6A0bpgSGDxDDEzN_s3p0DXtJCent38GArVaP98BDmpwIACn-FEYN4XgLOtrZxaaQseXT8RTrga0cAT5AfsDJezZGtw7sya0Q6pK2rZFviX0lGAwWSyCuO8zlaDdLocCZh7XXU3-DtKSNwoOGE9QC3oSQ4lw"/>
+</div>
+<!-- Content -->
+<div class="flex-grow flex flex-col justify-between">
+<div class="flex justify-between items-start">
+<div>
+<span class="font-label-sm text-label-sm text-primary-container bg-[#EFF4EF] px-2 py-0.5 rounded-sm uppercase tracking-wide">Insektisida</span>
+<h3 class="font-headline-md text-headline-md text-primary mt-1">Kalingga 526 SL</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Konsentrasi larut air untuk pengendalian hama sistemik.</p>
+</div>
+<button aria-label="Remove item" class="text-outline hover:text-error transition-colors p-1">
+<span class="material-symbols-outlined">delete</span>
+</button>
+</div>
+<div class="flex flex-col md:flex-row justify-between items-start md:items-end mt-4 gap-stack-md">
+<!-- Quantity Control -->
+<div class="flex items-center border border-outline-variant rounded-md overflow-hidden bg-surface-container-lowest h-10">
+<button aria-label="Decrease quantity" class="px-3 h-full hover:bg-surface-container-low text-on-surface-variant transition-colors flex items-center justify-center border-r border-outline-variant">
+<span class="material-symbols-outlined" style="font-size: 18px;">remove</span>
+</button>
+<input aria-label="Quantity" class="w-16 h-full text-center font-label-md text-label-md border-none focus:ring-0 text-primary-container p-0 bg-transparent" min="1" type="number" value="10"/>
+<button aria-label="Increase quantity" class="px-3 h-full hover:bg-surface-container-low text-on-surface-variant transition-colors flex items-center justify-center border-l border-outline-variant">
+<span class="material-symbols-outlined" style="font-size: 18px;">add</span>
+</button>
+<span class="px-3 text-label-sm font-label-sm text-on-surface-variant border-l border-outline-variant h-full flex items-center bg-surface-container-low">Liter</span>
+</div>
+<!-- Price Estimation -->
+<div class="text-right">
+<div class="font-label-sm text-label-sm text-on-surface-variant">Estimasi Harga Unit</div>
+<div class="font-headline-md text-headline-md text-primary">Rp 125.000</div>
+</div>
+</div>
+</div>
+<!-- Educational/Consultation Note Field -->
+<div class="w-full mt-4 md:mt-0 md:w-full md:absolute md:-bottom-2 md:left-0 md:transform md:translate-y-full md:opacity-0 md:group-hover:opacity-100 md:group-hover:translate-y-0 transition-all duration-300 z-10 hidden md:block">
+<!-- Expanding note field logic hidden for brevity in mockup, normally handled via JS, but showing a static version below for structural completeness without breaking layout -->
+</div>
+</div>
+<!-- Inline Note Field for Item 1 -->
+<div class="bg-surface-bright rounded-b-card border-x border-b border-surface-container-highest p-stack-md -mt-[25px] pt-8 z-0">
+<label class="font-label-sm text-label-sm text-on-surface-variant mb-2 block">Catatan Spesifik / Isu Lahan (Opsional)</label>
+<textarea class="w-full bg-surface-container-lowest border border-outline-variant rounded-md px-3 py-2 font-body-md text-body-md text-on-surface focus:border-primary-container focus:ring-1 focus:ring-primary-container transition-all" placeholder="Contoh: Luas lahan 5 Ha, serangan wereng coklat mulai parah di area utara..." rows="2"></textarea>
+</div>
+<!-- Cart Item 2: Barikade 180 EC -->
+<div class="bg-surface-container-lowest rounded-card shadow-soft p-stack-md md:p-stack-lg flex flex-col md:flex-row gap-stack-md border border-surface-container-highest relative group transition-all duration-300 hover:shadow-overlay">
+<div class="w-full md:w-32 h-40 bg-surface-container flex-shrink-0 rounded-lg overflow-hidden border border-outline-variant/30">
+<img alt="" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AP1WRLvfYa7Ezgt_jV4yZZFYLEcItcaoRQehkWuaJqpJqB5IAbtQiuO965o2tpvWUPMfLRQhy-VWncZDeoucQg72zJpZZuniWwmvW131RVsD6JKoMrXJLLv_WLH4vYveztx0wA7o9r0T_ezgZB8IyTCYlrqZI--UZpcg2A1cCMsB_JK0wNWA9B3r-C3PTLiBmKy9q4eaADWkkCtJPJJ4Tp5xFRZpleaWxmqqwYVm2No3Gutl2I0fgSsaxk5kzuE"/>
+</div>
+<div class="flex-grow flex flex-col justify-between">
+<div class="flex justify-between items-start">
+<div>
+<span class="font-label-sm text-label-sm text-primary-container bg-[#EFF4EF] px-2 py-0.5 rounded-sm uppercase tracking-wide">Fungisida</span>
+<h3 class="font-headline-md text-headline-md text-primary mt-1">Barikade 180 EC</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Emulsifiable concentrate untuk proteksi spektrum luas.</p>
+</div>
+<button aria-label="Remove item" class="text-outline hover:text-error transition-colors p-1">
+<span class="material-symbols-outlined">delete</span>
+</button>
+</div>
+<div class="flex flex-col md:flex-row justify-between items-start md:items-end mt-4 gap-stack-md">
+<div class="flex items-center border border-outline-variant rounded-md overflow-hidden bg-surface-container-lowest h-10">
+<button class="px-3 h-full hover:bg-surface-container-low text-on-surface-variant transition-colors flex items-center justify-center border-r border-outline-variant"><span class="material-symbols-outlined" style="font-size: 18px;">remove</span></button>
+<input class="w-16 h-full text-center font-label-md text-label-md border-none focus:ring-0 text-primary-container p-0 bg-transparent" min="1" type="number" value="25"/>
+<button class="px-3 h-full hover:bg-surface-container-low text-on-surface-variant transition-colors flex items-center justify-center border-l border-outline-variant"><span class="material-symbols-outlined" style="font-size: 18px;">add</span></button>
+<span class="px-3 text-label-sm font-label-sm text-on-surface-variant border-l border-outline-variant h-full flex items-center bg-surface-container-low">Liter</span>
+</div>
+<div class="text-right">
+<div class="font-label-sm text-label-sm text-on-surface-variant">Estimasi Harga Unit</div>
+<div class="font-headline-md text-headline-md text-primary">Rp 210.000</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Cart Item 3: Imsmell 400 EC -->
+<div class="bg-surface-container-lowest rounded-card shadow-soft p-stack-md md:p-stack-lg flex flex-col md:flex-row gap-stack-md border border-surface-container-highest relative group transition-all duration-300 hover:shadow-overlay">
+<div class="w-full md:w-32 h-40 bg-surface-container flex-shrink-0 rounded-lg overflow-hidden border border-outline-variant/30">
+<img alt="" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AP1WRLt8MfnfOKT_woGMMIIdorybgxPYf5cjzboL6eI8Y-z0bRv7JHrwxttb1QKrw9F4jsg2NVU6S_Eu3lDDndcke9UiSsuT5O6-8Hn2nyqYfHziTvY3lbFK0uliG68U8tIUU12m1S57DKks_F2cc-8c7v3xj9op6njCJlCThJjUT8t4DRvdwHKs5Oeh0yItlHfYTUSYR46OMdTfgO9L6CAoYWiwl03r2adXCIzVz7ksolcDxQywinFXAXmFlzQ"/>
+</div>
+<div class="flex-grow flex flex-col justify-between">
+<div class="flex justify-between items-start">
+<div>
+<span class="font-label-sm text-label-sm text-primary-container bg-[#EFF4EF] px-2 py-0.5 rounded-sm uppercase tracking-wide">Herbisida</span>
+<h3 class="font-headline-md text-headline-md text-primary mt-1">Imsmell 400 EC</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Herbisida pra-tumbuh selektif untuk gulma berdaun lebar.</p>
+</div>
+<button aria-label="Remove item" class="text-outline hover:text-error transition-colors p-1">
+<span class="material-symbols-outlined">delete</span>
+</button>
+</div>
+<div class="flex flex-col md:flex-row justify-between items-start md:items-end mt-4 gap-stack-md">
+<div class="flex items-center border border-outline-variant rounded-md overflow-hidden bg-surface-container-lowest h-10">
+<button class="px-3 h-full hover:bg-surface-container-low text-on-surface-variant transition-colors flex items-center justify-center border-r border-outline-variant"><span class="material-symbols-outlined" style="font-size: 18px;">remove</span></button>
+<input class="w-16 h-full text-center font-label-md text-label-md border-none focus:ring-0 text-primary-container p-0 bg-transparent" min="1" type="number" value="5"/>
+<button class="px-3 h-full hover:bg-surface-container-low text-on-surface-variant transition-colors flex items-center justify-center border-l border-outline-variant"><span class="material-symbols-outlined" style="font-size: 18px;">add</span></button>
+<span class="px-3 text-label-sm font-label-sm text-on-surface-variant border-l border-outline-variant h-full flex items-center bg-surface-container-low">Liter</span>
+</div>
+<div class="text-right">
+<div class="font-label-sm text-label-sm text-on-surface-variant">Estimasi Harga Unit</div>
+<div class="font-headline-md text-headline-md text-primary">Rp 185.000</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column: Sidebar Summary -->
+<div class="lg:col-span-4 mt-stack-lg lg:mt-0">
+<div class="bg-surface-container-lowest rounded-card shadow-soft border border-surface-container-highest p-stack-lg sticky top-28">
+<h2 class="font-headline-md text-headline-md text-primary border-b border-surface-container-high pb-stack-md mb-stack-md">Ringkasan Konsultasi</h2>
+<div class="flex flex-col gap-stack-sm mb-stack-lg">
+<div class="flex justify-between items-center">
+<span class="font-body-md text-body-md text-on-surface-variant">Total Item</span>
+<span class="font-label-md text-label-md text-primary">40 Liter (3 Jenis)</span>
+</div>
+<div class="flex justify-between items-center">
+<span class="font-body-md text-body-md text-on-surface-variant">Kategori Lahan</span>
+<span class="font-label-md text-label-md text-primary">Industri / Skala Besar</span>
+</div>
+</div>
+<div class="bg-[#EFF4EF] p-4 rounded-lg mb-stack-lg flex gap-3 items-start border border-[#cbe1d2]">
+<span class="material-symbols-outlined text-primary-container mt-0.5">info</span>
+<div>
+<p class="font-label-sm text-label-sm text-primary-container">Harga bersifat estimasi.</p>
+<p class="font-body-sm text-body-sm text-primary-container mt-1">Konsultasi ahli via WhatsApp gratis. Penawaran harga final dan rekomendasi aplikasi akan diberikan oleh tim agronomis kami.</p>
+</div>
+</div>
+<!-- CTAs -->
+<div class="flex flex-col gap-stack-md">
+<button class="w-full bg-primary-container hover:bg-primary text-on-primary font-headline-md text-headline-md py-3 px-6 rounded-btn transition-colors duration-200 flex items-center justify-center gap-2 shadow-sm">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">chat</span>
+                            Lanjutkan ke Konsultasi
+                        </button>
+<button class="w-full bg-transparent border-[1.5px] border-primary-container text-primary-container hover:bg-surface-container-low font-headline-md text-headline-md py-3 px-6 rounded-btn transition-colors duration-200">
+                            Lanjutkan Belanja
+                        </button>
+</div>
+<!-- Trust Markers -->
+<div class="mt-stack-lg border-t border-surface-container-high pt-stack-md flex flex-col gap-3">
+<div class="flex items-center gap-3 text-on-surface-variant">
+<span class="material-symbols-outlined text-secondary">verified</span>
+<span class="font-label-sm text-label-sm">Distributor Resmi &amp; Bersertifikat ISO</span>
+</div>
+<div class="flex items-center gap-3 text-on-surface-variant">
+<span class="material-symbols-outlined text-secondary">support_agent</span>
+<span class="font-label-sm text-label-sm">Dukungan Agronomis Ahli 24/7</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer Anchor -->
+<footer class="bg-surface-container-lowest dark:bg-surface-container-highest border-t border-outline-variant full-width mt-section-padding">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-stack-lg w-full px-margin-mobile md:px-margin-desktop py-section-padding max-w-max-container mx-auto">
+<!-- Brand Column -->
+<div class="col-span-1 md:col-span-1 flex flex-col gap-stack-md">
+<div class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed-dim">AgriDistribute Industrial</div>
+<p class="font-body-md text-body-md font-body-md text-on-surface-variant dark:text-on-surface-variant mt-2">
+                    © 2024 AgriDistribute Industrial. All rights reserved. Precision Stewardship through Scientific Rigor.
+                 </p>
+</div>
+<!-- Links Columns (Simplified for alignment with JSON requirements while fitting 4 cols) -->
+<div class="col-span-1 flex flex-col gap-stack-sm font-body-md text-body-md">
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-secondary dark:hover:text-secondary-fixed transition-all underline underline-offset-4" href="#">Privacy Policy</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-secondary dark:hover:text-secondary-fixed transition-all underline underline-offset-4" href="#">Terms of Service</a>
+</div>
+<div class="col-span-1 flex flex-col gap-stack-sm font-body-md text-body-md">
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-secondary dark:hover:text-secondary-fixed transition-all underline underline-offset-4" href="#">ISO 9001 Certified</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-secondary dark:hover:text-secondary-fixed transition-all underline underline-offset-4" href="#">Global GAP</a>
+</div>
+<div class="col-span-1 flex flex-col gap-stack-sm font-body-md text-body-md">
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-secondary dark:hover:text-secondary-fixed transition-all underline underline-offset-4 font-semibold text-primary dark:text-primary-fixed-dim" href="#">Contact Support</a>
+</div>
+</div>
+</footer>
+</body></html>
