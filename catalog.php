@@ -39,12 +39,10 @@ if (!empty($selectedCategory)) {
 
 // Categories list for the sidebar
 $categories = [
-    'Nutrisi' => 'Nutrisi',
-    'Fungisida' => 'Fungisida',
-    'Insektisida' => 'Insektisida',
-    'Benih Premium' => 'Benih Premium',
-    'Alat Pertanian' => 'Alat Pertanian',
-    'Sensor & IoT' => 'Sensor & IoT'
+    'benih perkebunan' => 'Benih Perkebunan',
+    'Pupuk' => 'Pupuk',
+    'sarana pertanian' => 'Sarana Pertanian',
+    'logistik' => 'Logistik'
 ];
 
 require_once 'includes/header.php';
@@ -109,7 +107,7 @@ require_once 'includes/header.php';
                         <span class="text-primary font-medium">Products</span>
                     </nav>
                     <h1 class="font-manrope font-bold text-headline-lg text-primary">
-                        <?= empty($selectedCategory) ? 'Semua Produk' : htmlspecialchars($selectedCategory) ?>
+                        <?= empty($selectedCategory) ? 'Semua Produk' : ucwords(htmlspecialchars($selectedCategory)) ?>
                     </h1>
                 </div>
                 <div class="flex flex-col sm:flex-row items-center gap-4 w-full md:w-auto">

@@ -86,7 +86,7 @@ require_once 'includes/header.php';
                                             <h4 class="font-manrope font-bold text-body-lg text-primary mb-1 hover:underline">
                                                 <a href="detail.php?id=<?= $productId ?>"><?= htmlspecialchars($p['name']) ?></a>
                                             </h4>
-                                            <span class="text-xs bg-[#EFF4EF] text-primary px-2.5 py-1 rounded-full font-medium"><?= htmlspecialchars($p['category']) ?></span>
+                                            <span class="text-xs bg-[#EFF4EF] text-primary px-2.5 py-1 rounded-full font-medium"><?= ucwords(htmlspecialchars($p['category'])) ?></span>
                                         </div>
                                     </td>
                                     

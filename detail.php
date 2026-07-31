@@ -43,7 +43,7 @@ require_once 'includes/header.php';
             <span class="material-symbols-outlined text-[16px]">chevron_right</span>
             <a class="hover:text-primary transition-colors" href="catalog.php">Products</a>
             <span class="material-symbols-outlined text-[16px]">chevron_right</span>
-            <a class="hover:text-primary transition-colors" href="catalog.php?category=<?= urlencode($product['category']) ?>"><?= htmlspecialchars($product['category']) ?></a>
+            <a class="hover:text-primary transition-colors" href="catalog.php?category=<?= urlencode($product['category']) ?>"><?= ucwords(htmlspecialchars($product['category'])) ?></a>
             <span class="material-symbols-outlined text-[16px]">chevron_right</span>
             <span class="text-primary font-medium"><?= htmlspecialchars($product['name']) ?></span>
         </nav>
@@ -96,7 +96,7 @@ require_once 'includes/header.php';
                         </span>
                         <?php endif; ?>
                         <span class="bg-[#EFF4EF] text-primary px-3 py-1 rounded-full font-inter font-medium text-xs">
-                            <?= htmlspecialchars($product['category']) ?>
+                            <?= ucwords(htmlspecialchars($product['category'])) ?>
                         </span>
                     </div>
                     <h1 class="font-manrope text-display-lg-mobile md:text-headline-lg font-bold text-primary mb-4 leading-tight">

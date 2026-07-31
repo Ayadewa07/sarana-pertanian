@@ -2,14 +2,14 @@
   {
     "id": 1,
     "name": "Kalingga 526 SL",
-    "category": "Nutrisi",
+    "category": "Pupuk",
     "sub_category": "Nutrisi Cair",
     "price": 85000,
     "description": "Kalium cair konsentrasi tinggi untuk pembesaran umbi dan buah.",
     "full_description": "Kalingga 526 SL adalah pupuk kalium cair konsentrasi tinggi yang dirancang khusus untuk merangsang pembesaran umbi dan buah pada berbagai jenis tanaman pertanian. Formulasi cair uniknya memungkinkan penyerapan cepat oleh stomata daun dan akar tanaman.",
     "image": "gambar/image_from_https_assets.zyrosite.com_cdn_cgi_image_format_auto_w_399_h_424_fit/screen.png",
     "badge": "Best Seller",
-    "tag": "Nutrisi",
+    "tag": "Pupuk",
     "crop_target": "Padi, Bawang Merah, Kentang, Melon, Cabai",
     "dosage": "1.5 - 2 ml per liter air",
     "benefits": [
@@ -22,14 +22,14 @@
   {
     "id": 2,
     "name": "Barikade 180 EC",
-    "category": "Fungisida",
+    "category": "Pupuk",
     "sub_category": "Fungisida & ZPT",
     "price": 115000,
     "description": "Anti jamur spektrum luas untuk perlindungan tanaman padi dan sayuran.",
     "full_description": "Barikade 180 EC adalah fungisida sistemik spektrum luas dengan aksi protektif dan kuratif yang dilengkapi Zat Pengatur Tumbuh (ZPT) tanaman. Melindungi secara total dari serangan jamur pathogen sekaligus membuat tanaman lebih hijau dan sehat.",
     "image": "gambar/image_from_https_assets.zyrosite.com_cdn_cgi_image_format_auto_w_400_h_424_fit_2/screen.png",
     "badge": "Original",
-    "tag": "Fungisida & ZPT",
+    "tag": "Pupuk",
     "crop_target": "Padi, Sayuran, Cabai, Tomat, Bawang Merah",
     "dosage": "1 - 1.5 ml per liter air",
     "benefits": [
@@ -42,14 +42,14 @@
   {
     "id": 3,
     "name": "ImSmell 400 EC",
-    "category": "Insektisida",
+    "category": "Pupuk",
     "sub_category": "Insektisida",
     "price": 95000,
     "description": "Penumpas hama lalat buah efektif dengan bahan aktif Dimethoate.",
     "full_description": "ImSmell 400 EC adalah insektisida kontak dan lambung berspektrum luas dengan bau khas yang menyengat untuk mengusir dan mengendalikan hama lalat buah (Bactrocera sp.) serta kutu-kutuan pada tanaman hortikultura.",
     "image": "gambar/image_from_https_assets.zyrosite.com_cdn_cgi_image_format_auto_w_400_h_424_fit_1/screen.png",
     "badge": "Terlaris",
-    "tag": "Insektisida",
+    "tag": "Pupuk",
     "crop_target": "Cabai, Mangga, Jeruk, Melon, Semangka, Tomat",
     "dosage": "2 ml per liter air",
     "benefits": [
@@ -62,14 +62,14 @@
   {
     "id": 4,
     "name": "Jagung Hibrida Bisi-18",
-    "category": "Benih Premium",
+    "category": "benih perkebunan",
     "sub_category": "Benih",
     "price": 75000,
     "description": "Benih jagung hibrida tahan penyakit dengan potensi hasil panen tinggi.",
     "full_description": "Benih Jagung Hibrida Bisi-18 merupakan benih jagung unggul pilihan nasional dengan potensi hasil panen sangat tinggi. Memiliki vigor tanaman yang kokoh dan perakaran yang sangat kuat sehingga toleran terhadap angin kencang.",
     "image": "gambar/image_from_https_images.unsplash.com_photo_1579893538973_f5e18745c8f7_auto/screen.png",
     "badge": "Unggul",
-    "tag": "Benih Premium",
+    "tag": "Benih",
     "crop_target": "Lahan Kering, Sawah Tadah Hujan",
     "dosage": "15 - 20 kg benih per hektar",
     "benefits": [
@@ -82,14 +82,14 @@
   {
     "id": 5,
     "name": "Precision Sprayer Nozzle",
-    "category": "Alat Pertanian",
+    "category": "sarana pertanian",
     "sub_category": "Alat Pertanian",
     "price": 25000,
     "description": "Nozzle sprayer presisi tinggi untuk distribusi cairan yang merata.",
     "full_description": "Precision Sprayer Nozzle dirancang khusus untuk mengoptimalkan aplikasi pestisida dan pupuk daun. Menghasilkan butiran semprot (droplet) yang konsisten dan merata untuk menutupi seluruh tajuk tanaman tanpa membuang banyak bahan aktif.",
     "image": "gambar/image_from_https_images.unsplash.com_photo_1691767247958_5c0d1505ac79_auto/screen.png",
     "badge": "Promo",
-    "tag": "Alat Pertanian",
+    "tag": "Alat",
     "crop_target": "Semua jenis alat semprot (sprayer gendong/mesin)",
     "dosage": "Pasangkan pada stik sprayer standar",
     "benefits": [
@@ -102,14 +102,14 @@
   {
     "id": 6,
     "name": "AgriSense Soil Monitor",
-    "category": "Sensor & IoT",
+    "category": "sarana pertanian",
     "sub_category": "Alat Pertanian",
     "price": 295000,
     "description": "Monitor kelembapan dan pH tanah digital untuk presisi pertanian.",
     "full_description": "AgriSense Soil Monitor adalah sensor tanah digital portabel untuk mengukur kelembapan (moisture), temperatur, dan tingkat keasaman (pH) tanah secara instan dan akurat. Menunjang keputusan irigasi dan pemupukan presisi.",
     "image": "gambar/image_from_https_images.unsplash.com_photo_1687295278526_075528ea7abe_auto/screen.png",
     "badge": "IoT Smart",
-    "tag": "Sensor & IoT",
+    "tag": "Alat",
     "crop_target": "Tanah bedengan, media tanam greenhouse, sawah",
     "dosage": "Tancapkan probe ke dalam tanah selama 1-2 menit",
     "benefits": [
@@ -117,6 +117,26 @@
       "Akurasi tinggi untuk pengukuran pH (toleransi +-0.2)",
       "Probe stainless steel panjang tahan korosi",
       "Membantu mencegah pembusukan akar akibat kelebihan air"
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Kargo Distribusi B2B",
+    "category": "logistik",
+    "sub_category": "Kargo & Distribusi",
+    "price": 1200000,
+    "description": "Layanan pengiriman kargo curah, pupuk, dan hasil panen dengan armada terlindungi.",
+    "full_description": "Sarana Pertanian menyediakan layanan armada distribusi logistik khusus sektor agribisnis. Kami melayani transportasi pupuk volume besar, benih perkebunan, serta pengangkutan hasil panen dari lahan ke gudang penyimpanan utama dengan armada prima dan terpantau.",
+    "image": "gambar/image_from_https_images.unsplash.com_photo_1690292885661_3818e5fe9067_auto/screen.png",
+    "badge": "Logistik",
+    "tag": "Logistik",
+    "crop_target": "Semua Wilayah Operasi Jawa-Bali",
+    "dosage": "Hubungi Kontak B2B untuk Penjadwalan Armada",
+    "benefits": [
+      "Distribusi produk pupuk dan benih yang aman & kering",
+      "Armada truk prima terpantau GPS secara real-time",
+      "Kapasitas kargo box besar hingga 8 ton",
+      "Ketepatan waktu pengiriman terjamin"
     ]
   }
 ]
